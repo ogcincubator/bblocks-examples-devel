@@ -5,6 +5,7 @@ imports:
   - https://opengeospatial.github.io/ogcapi-sosa
   - https://ogcincubator.github.io/bblocks-ogcapi-processes
   - https://ogcincubator.github.io/topo-feature
+  - https://opengeospatial.github.io/geopose-bblocks/
 abstract: "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n"
 description: "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n"
 sparql:
