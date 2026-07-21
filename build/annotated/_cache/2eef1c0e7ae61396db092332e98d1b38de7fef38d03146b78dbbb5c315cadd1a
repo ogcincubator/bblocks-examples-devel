@@ -1,0 +1,164 @@
+{
+  "name": "GeoPose",
+  "abstract": "[GeoPose](https://www.geopose.org/) Building Blocks\n",
+  "modified": "2025-05-14T12:25:49.082152",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"d54737439f35f87501c8deabf419a6a892b42929",
+      "shortCommitId": "\"d54737",
+      "date": "2025-04-28T10:28:17+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/opengeospatial/geopose-bblocks",
+  "gitHubRepository": "https://github.com/opengeospatial/geopose-bblocks/blob/master/",
+  "baseURL": "https://opengeospatial.github.io/geopose-bblocks/",
+  "viewerURL": "https://opengeospatial.github.io/geopose-bblocks/",
+  "validationReport": "https://opengeospatial.github.io/geopose-bblocks/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.geo.geopose.advanced",
+      "name": "GeoPose Advanced",
+      "abstract": "Advanced GeoPose allowing flexible outer frame specification, quaternion orientation, and valid time.",
+      "status": "under-development",
+      "highlighted": true,
+      "dateTimeAddition": "2023-07-13T00:00:00+00:00",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-05-14",
+      "sources": [
+        {
+          "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
+          "link": "https://docs.ogc.org/dis/21-056r10/21-056r10.html"
+        }
+      ],
+      "maturity": "proposal",
+      "scope": "geo",
+      "schema": {
+        "application/yaml": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.yaml",
+        "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.json"
+      },
+      "group": "GeoPose",
+      "shaclRules": {},
+      "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/context.jsonld",
+      "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/remote_cache/",
+      "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Advanced.Schema.json",
+      "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/advanced/context.jsonld",
+      "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/advanced/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.advanced"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geo.geopose.basic.quaternion",
+      "name": "GeoPose Basic-Quaternion",
+      "abstract": "Basic GeoPose using quaternion to specify orientation",
+      "status": "under-development",
+      "highlighted": true,
+      "dateTimeAddition": "2023-07-13T00:00:00+00:00",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-05-14",
+      "sources": [
+        {
+          "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
+          "link": "https://docs.ogc.org/dis/21-056r10/21-056r10.html"
+        }
+      ],
+      "maturity": "proposal",
+      "scope": "geo",
+      "schema": {
+        "application/yaml": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
+        "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json"
+      },
+      "group": "GeoPose",
+      "shaclRules": {},
+      "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
+      "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/remote_cache/",
+      "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
+      "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/context.jsonld",
+      "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.basic.quaternion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geo.geopose.basic.ypr",
+      "name": "GeoPose Basic-YPR",
+      "abstract": "Basic GeoPose using yaw, pitch, and roll to specify orientation",
+      "status": "under-development",
+      "highlighted": true,
+      "dateTimeAddition": "2023-03-15T00:00:00+00:00",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-05-14",
+      "sources": [
+        {
+          "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
+          "link": "https://docs.ogc.org/dis/21-056r10/21-056r10.html"
+        }
+      ],
+      "maturity": "proposal",
+      "scope": "geo",
+      "schema": {
+        "application/yaml": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
+        "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.json"
+      },
+      "group": "GeoPose",
+      "shaclRules": {},
+      "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+      "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/remote_cache/",
+      "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
+      "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/ypr/context.jsonld",
+      "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/ypr/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/opengeospatial/geopose-bblocks/blob/master/build/tests/geo/geopose/basic/ypr/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.basic.ypr"
+        }
+      }
+    }
+  ]
+}

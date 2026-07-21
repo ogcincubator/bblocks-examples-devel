@@ -7,7 +7,7 @@ allOf:
     hasResult:
       properties:
         pose:
-          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
           x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
         distance:
           type: number

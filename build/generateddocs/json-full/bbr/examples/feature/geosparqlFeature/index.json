@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -47,16 +47,19 @@
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/examples/feature.json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json",
+          "sizeBytes": 311,
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}\n"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.jsonld",
+          "sizeBytes": 444,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl",
+          "sizeBytes": 656,
           "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] ;\n    geojson:geometry \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^rdf:JSON .\n\n"
         }
       ]

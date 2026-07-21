@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "shaclShapes": {
     "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
       "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -33,16 +33,19 @@
         {
           "language": "json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.json",
+          "sizeBytes": 47,
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.jsonld",
+          "sizeBytes": 238,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\",\n  \"three\": 3,\n  \"doubleString\": \"valuevalue\"\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.ttl",
+          "sizeBytes": 303,
           "code": "@prefix ex: <http://example.com/> .\n@prefix ns1: <https://example.net/2/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:exHasGenThree 3 ;\n    ex:hasGenDoubleString \"valuevalue\" ;\n    ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 ;\n    ns1:hasFour 4 ;\n    ns1:nineBound false .\n\n"
         }
       ]

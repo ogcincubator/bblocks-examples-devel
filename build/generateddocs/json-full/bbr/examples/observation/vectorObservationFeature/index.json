@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.examples.observation.vectorObservation",
-    "ogc.sosa.properties.observation",
     "ogc.sosa.features.observation",
+    "ogc.sosa.properties.observation",
+    "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.features.observationCollection"
   ],
   "tags": [
@@ -67,17 +67,20 @@
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/examples/observation.json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.json",
+          "sizeBytes": 785,
           "code": "{\n  \"id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"observedProperty\": \"https://w3id.org/ad4gd/air-quality/properties/CO2\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}\n"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.jsonld",
+          "sizeBytes": 930,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n  \"id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"observedProperty\": \"https://w3id.org/ad4gd/air-quality/properties/CO2\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_1_1.ttl",
-          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <https://w3id.org/ogc/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ;\n                            geopose:h 5e-01 ] ] ] ;\n    sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/CO2> ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
+          "sizeBytes": 1182,
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ] ] ] ;\n    sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/CO2> ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
         }
       ]
     },
@@ -90,17 +93,20 @@
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/examples/observationCollection.json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.json",
+          "sizeBytes": 1024,
           "code": "{\n  \"id\": \"c1\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"sosa:ObservationCollection\",\n  \"observedProperty\": \"Geopose (or a URI for this concept)\",\n  \"features\": [\n    {\n      \"id\": \"vector-obs-1\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"LineString\",\n        \"coordinates\": [\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ],\n          [\n        -111.71,\n        40.156709946862874\n      ]\n        ]\n      },\n      \"time\": null,\n      \"place\": null,\n      \"properties\": {\n        \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n        \"resultTime\": \"2023-05-22T16:41:00+2\",\n        \"hasResult\": {\n          \"pose\": {\n            \"position\": {\n              \"lat\": -111.67183507997295,\n              \"lon\": 40.056709946862874,\n              \"h\": 0.5\n            },\n            \"angles\": {\n              \"yaw\": 15.35,\n              \"pitch\": -0.01,\n              \"roll\": 0\n            }\n          },\n          \"distance\": 6889234.2\n        }\n      }\n    }\n  ]\n}"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.jsonld",
+          "sizeBytes": 1182,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n  \"id\": \"c1\",\n  \"type\": \"FeatureCollection\",\n  \"featureType\": \"sosa:ObservationCollection\",\n  \"observedProperty\": \"Geopose (or a URI for this concept)\",\n  \"features\": [\n    {\n      \"id\": \"vector-obs-1\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"LineString\",\n        \"coordinates\": [\n          [\n            -111.67183507997295,\n            40.056709946862874\n          ],\n          [\n            -111.71,\n            40.156709946862875\n          ]\n        ]\n      },\n      \"time\": null,\n      \"place\": null,\n      \"properties\": {\n        \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n        \"resultTime\": \"2023-05-22T16:41:00+2\",\n        \"hasResult\": {\n          \"pose\": {\n            \"position\": {\n              \"lat\": -111.67183507997295,\n              \"lon\": 40.056709946862874,\n              \"h\": 0.5\n            },\n            \"angles\": {\n              \"yaw\": 15.35,\n              \"pitch\": -0.01,\n              \"roll\": 0\n            }\n          },\n          \"distance\": 6889234.2\n        }\n      }\n    }\n  ]\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_2_1.ttl",
-          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <https://w3id.org/ogc/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/c1> a sosa:ObservationCollection,\n        geojson:FeatureCollection ;\n    sosa:hasMember <http://example.com/features/vector-obs-1> ;\n    sosa:observedProperty <http://example.com/features/> .\n\n<http://example.com/features/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ;\n                            geopose:h 5e-01 ] ] ] ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
+          "sizeBytes": 1325,
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/c1> a sosa:ObservationCollection,\n        geojson:FeatureCollection ;\n    sosa:hasMember <http://example.com/features/vector-obs-1> ;\n    sosa:observedProperty <http://example.com/features/> .\n\n<http://example.com/features/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ] ] ] ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
         }
       ]
     },
@@ -112,17 +118,20 @@
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/examples/observationCollection.json",
           "json-path": "$.features[0]",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_3_1.json",
+          "sizeBytes": 707,
           "code": "{\n  \"id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_3_1.jsonld",
+          "sizeBytes": 853,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld\",\n  \"id\": \"vector-obs-1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"time\": null,\n  \"place\": null,\n  \"properties\": {\n    \"hasFeatureOfInterest\": \"eg:Traverse-P1-P2\",\n    \"resultTime\": \"2023-05-22T16:41:00+2\",\n    \"hasResult\": {\n      \"pose\": {\n        \"position\": {\n          \"lat\": -111.67183507997295,\n          \"lon\": 40.056709946862874,\n          \"h\": 0.5\n        },\n        \"angles\": {\n          \"yaw\": 15.35,\n          \"pitch\": -0.01,\n          \"roll\": 0\n        }\n      },\n      \"distance\": 6889234.2\n    }\n  }\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservationFeature/example_3_1.ttl",
-          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <https://w3id.org/ogc/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ;\n                            geopose:h 5e-01 ] ] ] ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
+          "sizeBytes": 1099,
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/vector-obs-1> a geojson:Feature ;\n    sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;\n    sosa:hasResult [ resultschema:distance 6.889234e+06 ;\n            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;\n                            geopose:roll 0 ;\n                            geopose:yaw 1.535e+01 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat -1.116718e+02 ;\n                            geo1:long 4.005671e+01 ] ] ] ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
         }
       ]
     }

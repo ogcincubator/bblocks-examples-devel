@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -458,26 +458,32 @@
           "transformResults": {
             "prefix-keys": {
               "success": true,
+              "sizeBytes": 59,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
             },
             "inline-transform": {
               "success": true,
+              "sizeBytes": 146,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
             },
             "python-uppercase-keys": {
               "success": true,
+              "sizeBytes": 47,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-uppercase-keys.json"
             },
             "node-add-metadata": {
               "success": true,
+              "sizeBytes": 90,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-add-metadata.json"
             },
             "python-to-csv": {
               "success": true,
+              "sizeBytes": 25,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-to-csv.csv"
             },
             "node-to-csv": {
               "success": true,
+              "sizeBytes": 32,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-to-csv.csv"
             },
             "jq-error": {
@@ -486,18 +492,21 @@
             },
             "python-error": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfvihs90s.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp19fell81.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             },
             "jinja2-html": {
               "success": true,
+              "sizeBytes": 96,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
             },
             "dump-context": {
               "success": true,
+              "sizeBytes": 6435,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.dump-context.json"
             },
             "python-geojson": {
               "success": true,
+              "sizeBytes": 237,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
               "profilesValidation": {
                 "ogc.geo.features.feature": {
@@ -511,11 +520,13 @@
               }
             }
           },
+          "sizeBytes": 48,
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld",
+          "sizeBytes": 186,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}"
         },
         {
@@ -524,9 +535,11 @@
           "transformResults": {
             "prefix-predicates": {
               "success": true,
+              "sizeBytes": 151,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
             }
           },
+          "sizeBytes": 151,
           "code": "@prefix ex: <http://example.com/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 .\n\n"
         }
       ]
@@ -540,9 +553,11 @@
           "transformResults": {
             "sample-xslt": {
               "success": true,
+              "sizeBytes": 253,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
             }
           },
+          "sizeBytes": 193,
           "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>"
         }
       ]
@@ -553,6 +568,7 @@
         {
           "language": "html",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_3_1.html",
+          "sizeBytes": 98,
           "code": "<!doctype html>\n<html>\n  <body>\n    <p>This is a <strong>paragraph</strong>!</p>\n  </body>\n</html>"
         }
       ]

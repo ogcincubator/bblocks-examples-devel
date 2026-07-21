@@ -61,7 +61,7 @@ This building block defines the *property set* for an example specialisation of 
 #### ttl
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geopose: <https://w3id.org/ogc/geopose/> .
+@prefix geopose: <http://example.com/geopose/> .
 @prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -70,9 +70,9 @@ This building block defines the *property set* for an example specialisation of 
     sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
                             geopose:roll 3.3e-01 ;
                             geopose:yaw 5.553e+00 ] ;
-                    geopose:position [ geo1:lat 4.346498e+01 ;
-                            geo1:long -3.803638e+00 ;
-                            geopose:h 5e-01 ] ] ] ;
+                    geopose:position [ geopose:h 5e-01 ;
+                            geo1:lat 4.346498e+01 ;
+                            geo1:long -3.803638e+00 ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
     sosa:resultTime "2023-05-22T16:41:00+2" .
 
@@ -91,7 +91,7 @@ allOf:
     hasResult:
       properties:
         pose:
-          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
           x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
         distance:
           type: number
@@ -533,7 +533,7 @@ Links to the schema:
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
     "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
-    "geopose": "https://w3id.org/ogc/geopose/",
+    "geopose": "http://example.com/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

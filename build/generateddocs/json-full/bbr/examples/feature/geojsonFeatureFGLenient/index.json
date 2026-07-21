@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -47,16 +47,19 @@
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/examples/feature.json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/example_1_1.json",
+          "sizeBytes": 465,
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"app:building\",\n  \"coordRefSys\": \"http://www.opengis.net/def/crs/EPSG/0/5555\",\n  \"time\": { \"interval\": [\"2014-04-24T10:50:18Z\", \"..\"] },\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}\n"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/example_1_1.jsonld",
+          "sizeBytes": 629,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"app:building\",\n  \"coordRefSys\": \"http://www.opengis.net/def/crs/EPSG/0/5555\",\n  \"time\": {\n    \"interval\": [\n      \"2014-04-24T10:50:18Z\",\n      \"..\"\n    ]\n  },\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/example_1_1.ttl",
+          "sizeBytes": 802,
           "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n@prefix ns1: <http://www.opengis.net/def/glossary/term/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a <app:building>,\n        geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    dcterms:time [ time:hasTime ( \"2014-04-24T10:50:18Z\" \"..\" ) ] ;\n    ns1:CoordinateReferenceSystemCRS \"http://www.opengis.net/def/crs/EPSG/0/5555\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n"
         }
       ]

@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -43,16 +43,19 @@
         {
           "language": "json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.json",
+          "sizeBytes": 30,
           "code": "{\n  \"myProp\": \"Very smooth\"\n}\n"
         },
         {
           "language": "jsonld",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.jsonld",
+          "sizeBytes": 158,
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld\",\n  \"myProp\": \"Very smooth\"\n}"
         },
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.ttl",
+          "sizeBytes": 93,
           "code": "@prefix myNamespace: <http://example.org/myModel/> .\n\n[] myNamespace:myProp \"Very smooth\" .\n\n"
         }
       ]

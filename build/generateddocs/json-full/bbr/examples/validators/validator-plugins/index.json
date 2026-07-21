@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-06-28",
+  "dateOfLastChange": "2026-07-21",
   "resources": [
     {
       "role": "validation",
@@ -32,6 +32,7 @@
           "language": "application/zip",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/sample.zip",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip",
+          "sizeBytes": 1099121,
           "binary": true
         }
       ]
@@ -43,6 +44,7 @@
         {
           "language": "text/wkt",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_2_1.text.text.wkt",
+          "sizeBytes": 63,
           "code": "POLYGON ((0 0, 4 0, 4 4, 0 4, 0 0), (1 1, 1 2, 2 2, 2 1, 1 1))\n"
         }
       ]
@@ -54,6 +56,7 @@
         {
           "language": "application/xml",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_3_1.application.application.xml",
+          "sizeBytes": 114,
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Point>\n  <coordinates>51.5 -0.1</coordinates>\n  <srs>CRS:84</srs>\n</Point>"
         }
       ]

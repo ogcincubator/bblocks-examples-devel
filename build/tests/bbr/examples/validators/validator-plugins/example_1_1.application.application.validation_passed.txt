@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example
-Generated 2026-06-28T16:32:28.719865+00:00
+Generated 2026-07-21T12:13:13.690860+00:00
 === Plugin ===
 
 --- Plugin: bbplugin_sample_validators.ZipValidator ---

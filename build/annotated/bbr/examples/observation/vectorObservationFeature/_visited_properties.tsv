@@ -161,14 +161,14 @@ path	@id	schema
 /_anyOf/0/properties/result@links		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
 /_anyOf/0/properties/hasSimpleResult		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
 /_anyOf/0/properties/hasResult/pose	https://w3id.org/ogc/hosted/examples/resultschema/pose	https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
-/_anyOf/0/properties/hasResult/pose/position	https://w3id.org/ogc/geopose/position	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/position/h	https://w3id.org/ogc/geopose/h	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/angles	https://w3id.org/ogc/geopose/angles	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/angles/yaw	https://w3id.org/ogc/geopose/yaw	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/angles/pitch	https://w3id.org/ogc/geopose/pitch	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
-/_anyOf/0/properties/hasResult/pose/angles/roll	https://w3id.org/ogc/geopose/roll	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/position	http://example.com/geopose/position	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/position/h	http://example.com/geopose/h	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/angles	http://example.com/geopose/angles	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/_anyOf/0/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
 /_anyOf/0/properties/hasResult/distance	https://w3id.org/ogc/hosted/examples/resultschema/distance	https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
 /_anyOf/1/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
 /_anyOf/1/featureType	https://purl.org/geojson/vocab#collectionFeatureType	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml
