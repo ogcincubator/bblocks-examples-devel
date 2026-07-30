@@ -10,13 +10,13 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-07-21",
+  "dateOfLastChange": "2026-07-30",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
-    "ogc.geo.geopose.basic.ypr"
+    "ogc.geo.geopose.basic.ypr",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "examples",

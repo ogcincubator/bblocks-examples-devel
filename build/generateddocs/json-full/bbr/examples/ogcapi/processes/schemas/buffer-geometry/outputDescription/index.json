@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-07-21",
+  "dateOfLastChange": "2026-07-30",
   "maturity": "development",
   "tags": [
     "examples",
@@ -18,8 +18,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-    "ogc.api.processes.v1.schemas.outputDescription"
+    "ogc.api.processes.v1.schemas.outputDescription",
+    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml",

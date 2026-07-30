@@ -8,7 +8,7 @@
   "dateTimeAddition": "2026-05-19T00:00:00+00:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-07-21",
+  "dateOfLastChange": "2026-07-30",
   "shaclShapes": {},
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
@@ -228,7 +228,7 @@
             },
             "reuse-error-propagation": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphd823oik.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmphd823oik.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp4sqyeulx.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp4sqyeulx.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             }
           },
           "sizeBytes": 62,

@@ -1,5 +1,5 @@
 Validation report for ogc.sosa.features.observation - SOSA Observation Feature
-Generated 2026-07-21T12:13:41.615678+00:00
+Generated 2026-07-30T13:47:25.049940+00:00
 === Unknown errors ===
 
 ** Validation error **

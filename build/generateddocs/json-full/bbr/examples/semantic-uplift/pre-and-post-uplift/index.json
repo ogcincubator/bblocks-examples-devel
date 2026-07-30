@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-07-21",
+  "dateOfLastChange": "2026-07-30",
   "shaclShapes": {
     "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
       "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
