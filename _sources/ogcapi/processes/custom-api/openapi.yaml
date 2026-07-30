@@ -112,7 +112,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: bblocks://ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions
+                $ref: bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema
         404:
           $ref: "bblocks://ogc.api.processes.v1.responses.NotFound"
         500:
