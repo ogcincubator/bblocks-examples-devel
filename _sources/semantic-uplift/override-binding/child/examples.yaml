@@ -1,0 +1,7 @@
+- title: Child (profile) example
+  comment: |
+    An instance of the profile: "note" is now skos:definition (@type xsd:string still inherited from the
+    base block) and "label" is now skos:altLabel with @type xsd:language.
+  snippets:
+    - language: json
+      ref: examples/child.json

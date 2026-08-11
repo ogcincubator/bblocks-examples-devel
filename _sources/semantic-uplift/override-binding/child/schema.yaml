@@ -1,0 +1,10 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Profile of "Override Binding - Base" that redeclares "note" and "label" to narrow their inherited SKOS bindings.'
+allOf:
+  - $ref: bblocks://ogc.bbr.examples.semantic-uplift.override-binding.base
+  - type: object
+    properties:
+      note:
+        type: string
+      label:
+        type: string

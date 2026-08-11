@@ -1,0 +1,32 @@
+{
+  "name": "Override Binding - Child (Profile)",
+  "highlighted": true,
+  "abstract": "A profile of 'Override Binding - Base' that narrows its inherited 'note' and 'label' bindings by redeclaring them in its own context.jsonld.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-08-11T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-08-11",
+  "isProfileOf": [
+    "bblocks://ogc.bbr.examples.semantic-uplift.override-binding.base"
+  ],
+  "sources": [
+    {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "link": "https://www.w3.org/TR/skos-reference/"
+    },
+    {
+      "title": "OGC Blocks docs: Overriding an inherited binding",
+      "link": "https://ogcincubator.github.io/bblocks-docs/create/semantic-uplift#overriding-an-inherited-binding"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "semantic-uplift",
+    "examples",
+    "profiles"
+  ],
+  "group": "Examples"
+}

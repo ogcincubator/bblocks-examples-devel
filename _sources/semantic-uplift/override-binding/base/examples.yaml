@@ -1,0 +1,6 @@
+- title: Base example
+  comment: |
+    A plain instance showing "note" as skos:note and "label" as skos:prefLabel.
+  snippets:
+    - language: json
+      ref: examples/base.json
