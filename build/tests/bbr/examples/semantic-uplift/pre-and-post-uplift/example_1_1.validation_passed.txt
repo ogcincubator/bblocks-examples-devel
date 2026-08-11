@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.semantic-uplift.pre-and-post-uplift - Pre and Post Semantic Uplift example
-Generated 2026-07-30T13:46:58.219890+00:00
+Generated 2026-08-11T09:03:40.307244+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,7 +17,7 @@ Validation result for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
- - Shape <http://example.com/rules#testHasOneIs1>: _:N727ddc84152044d8879c313ffb4854f1
+ - Shape <http://example.com/rules#testHasOneIs1>: _:N7dbf40deb15447a3a0cb57a7e33f25ed
 
 === End SHACL ===
 

@@ -32,6 +32,12 @@ Example ontology for forest sample datae
 
 Output schema for the buffer geometry process
 
+### `ogc.bbr.examples.semantic-uplift.override-binding.base` — Override Binding - Base
+
+**Type:** schema
+
+A base building block binding 'note' and 'label' to generic SKOS predicates, to be narrowed by a profile that extends it.
+
 ### `ogc.bbr.examples.semantic-uplift.pre-and-post-uplift` — Pre and Post Semantic Uplift example
 
 **Type:** schema
@@ -67,6 +73,12 @@ Input schema for the buffer geometry process
 **Type:** schema
 
 Example schema defining the properties of a forest stand, including forest type classification, forest region, target management unit, field verification status, area, and data provenance.
+
+### `ogc.bbr.examples.semantic-uplift.override-binding.child` — Override Binding - Child (Profile)
+
+**Type:** schema
+
+A profile of 'Override Binding - Base' that narrows its inherited 'note' and 'label' bindings by redeclaring them in its own context.jsonld.
 
 ### `ogc.bbr.examples.feature.externalSchema` — External Schema (Smart Data Models)
 

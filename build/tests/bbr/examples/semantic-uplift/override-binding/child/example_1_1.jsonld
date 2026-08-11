@@ -1,0 +1,5 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
+  "note": "This term narrows the inherited 'note' binding to skos:definition.",
+  "label": "en"
+}

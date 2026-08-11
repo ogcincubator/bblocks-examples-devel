@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+      "@type": "http://www.w3.org/2001/XMLSchema#language"
+    },
+    "@version": 1.1
+  }
+}

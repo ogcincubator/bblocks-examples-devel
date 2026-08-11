@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.linkeddata.forestStandProperties - Forest Stand Properties
-Generated 2026-07-30T13:46:58.779903+00:00
+Generated 2026-08-11T09:03:40.859459+00:00
 === Files ===
 Using ../forestStandCollection/examples/feature.json from examples
 JSON-LD context is present - uplifting

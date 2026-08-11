@@ -1,0 +1,70 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.examples.semantic-uplift.override-binding.base",
+  "name": "Override Binding - Base",
+  "highlighted": true,
+  "abstract": "A base building block binding 'note' and 'label' to generic SKOS predicates, to be narrowed by a profile that extends it.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-08-11T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-08-11",
+  "sources": [
+    {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "link": "https://www.w3.org/TR/skos-reference/"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "semantic-uplift",
+    "examples"
+  ],
+  "group": "Examples",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/base/",
+  "description": "## Override Binding - Base\n\nA plain building block with two properties, `note` and `label`, each bound in [context.jsonld](context.jsonld)\nto a generic SKOS predicate:\n\n* `note` &rarr; `skos:note`\n* `label` &rarr; `skos:prefLabel`\n\nOn its own this block is unremarkable. It exists to be extended by\n[Override Binding - Child](bblocks://ogc.bbr.examples.semantic-uplift.override-binding.child), which redeclares\nthese same property names in its own context to narrow their meaning \u2014 see that block's description, and the docs\non [overriding an inherited binding](https://ogcincubator.github.io/bblocks-docs/create/semantic-uplift#overriding-an-inherited-binding),\nfor what that demonstrates.\n",
+  "examples": [
+    {
+      "title": "Base example",
+      "comment": "A plain instance showing \"note\" as skos:note and \"label\" as skos:prefLabel.\n",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/examples/base.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/override-binding/base/example_1_1.json",
+          "sizeBytes": 82,
+          "code": "{\n  \"note\": \"A generic remark about this resource.\",\n  \"label\": \"Generic Label\"\n}\n"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/override-binding/base/example_1_1.jsonld",
+          "sizeBytes": 228,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/context.jsonld\",\n  \"note\": \"A generic remark about this resource.\",\n  \"label\": \"Generic Label\"\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/override-binding/base/example_1_1.ttl",
+          "sizeBytes": 224,
+          "code": "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] skos:note \"A generic remark about this resource.\"^^xsd:string ;\n    skos:prefLabel \"Generic Label\"^^xsd:string .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Base schema binding \"note\" and \"label\" to generic SKOS predicates. See\n  the \"Override Binding - Child\" building block for how a profile can narrow these.\ntype: object\nproperties:\n  note:\n    type: string\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#note\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string\n  label:\n    type: string\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitPath": "_sources/semantic-uplift/override-binding/base"
+}
