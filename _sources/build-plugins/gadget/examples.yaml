@@ -1,0 +1,6 @@
+- snippets:
+    - language: json
+      code: |
+        {
+          "gadgetName": "Right sprocket"
+        }

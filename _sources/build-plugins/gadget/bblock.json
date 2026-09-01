@@ -1,0 +1,15 @@
+{
+  "name": "Build plugins example: Gadget",
+  "highlighted": true,
+  "abstract": "A second trivial building block used to demonstrate build (postprocessing lifecycle) plugins",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-09-01",
+  "tags": [
+    "build-plugins",
+    "examples"
+  ],
+  "group": "Examples"
+}
