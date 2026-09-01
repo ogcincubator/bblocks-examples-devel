@@ -36,7 +36,7 @@
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/context.jsonld",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/",
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
   "examples": [
     {
@@ -59,8 +59,8 @@
         {
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl",
-          "sizeBytes": 656,
-          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] ;\n    geojson:geometry \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^rdf:JSON .\n\n"
+          "sizeBytes": 446,
+          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] .\n\n"
         }
       ]
     }

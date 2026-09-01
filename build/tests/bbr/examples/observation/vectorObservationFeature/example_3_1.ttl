@@ -15,6 +15,7 @@
                     geopose:position [ geopose:h 5e-01 ;
                             geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ] ] ] ;
+    sosa:observedProperty <https://example.org/def/observableProperties/geopose> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .

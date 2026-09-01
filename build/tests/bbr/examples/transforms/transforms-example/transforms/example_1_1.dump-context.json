@@ -63,7 +63,7 @@
       },
       "python-error": {
         "success": false,
-        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpuwa7mz6c.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpm45ephql.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
       },
       "jinja2-html": {
         "success": true,

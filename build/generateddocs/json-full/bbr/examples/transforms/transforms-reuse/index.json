@@ -228,7 +228,7 @@
             },
             "reuse-error-propagation": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3c1y2vk7.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp3c1y2vk7.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1_u82yv6.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp1_u82yv6.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             }
           },
           "sizeBytes": 62,

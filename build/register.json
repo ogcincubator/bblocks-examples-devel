@@ -3,7 +3,7 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-09-01T10:21:56.773078",
+  "modified": "2026-09-01T11:16:29.786782",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"14db97e8f22b426dd2910dc84ca08096f1fa837d",
@@ -65,7 +65,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -109,7 +109,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -165,7 +165,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -202,7 +202,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -246,7 +246,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -301,7 +301,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -345,7 +345,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -811,7 +811,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1018,7 +1018,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1059,7 +1059,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1108,7 +1108,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1166,7 +1166,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1232,7 +1232,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1302,7 +1302,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1364,7 +1364,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1404,7 +1404,7 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/",
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "documentation": {
         "markdown": {
@@ -1421,7 +1421,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1484,7 +1484,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1550,7 +1550,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1605,7 +1605,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1675,7 +1675,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1724,7 +1724,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1773,7 +1773,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1911,7 +1911,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1959,7 +1959,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2009,7 +2009,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2057,7 +2057,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2116,7 +2116,7 @@
       "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservationFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/observation/vectorObservationFeature/",
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
         "markdown": {
@@ -2133,7 +2133,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2151,14 +2151,18 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.topo.features.topo-feature-collection",
         "bblocks://ogc.geo.topo.features.topo-line",
+        "bblocks://ogc.geo.topo.features.topo-feature-collection",
         "bblocks://ogc.ogc-utils.iri-or-curie"
       ],
       "tags": [],
       "group": "Entities",
       "highlighted": true,
       "shaclShapes": {
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+        ],
         "ogc.geo.topo.features.topo-feature-collection": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
@@ -2168,10 +2172,6 @@
         ],
         "ogc.geo.features.featureCollection": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-        ],
-        "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
@@ -2234,7 +2234,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2267,19 +2267,19 @@
       },
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://ogc.api.processes.v1.schemas.execute",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
         "bblocks://ogc.api.processes.v1.schemas.results",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
+        "bblocks://ogc.api.processes.v1.responses.ServerError",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
-        "bblocks://ogc.api.processes.v1.responses.NotFound"
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/custom-api/openapi.yaml",
@@ -2300,7 +2300,7 @@
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-09-01T10:22:36.556730+00:00",
+        "processedAt": "2026-09-01T11:17:03.631548+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     }
@@ -2439,7 +2439,7 @@
     }
   ],
   "x-sampleBuildPlugin": {
-    "processedAt": "2026-09-01T10:22:36.556730+00:00",
+    "processedAt": "2026-09-01T11:17:03.631548+00:00",
     "bblockCount": 29
   }
 }
