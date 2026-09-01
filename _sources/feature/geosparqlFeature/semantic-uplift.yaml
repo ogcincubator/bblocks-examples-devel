@@ -1,3 +1,3 @@
 additionalSteps:
-  - type: shacl
-    ref: uplift/geometry.shacl
+  - type: sparql-update
+    ref: uplift/geometry.sparql
