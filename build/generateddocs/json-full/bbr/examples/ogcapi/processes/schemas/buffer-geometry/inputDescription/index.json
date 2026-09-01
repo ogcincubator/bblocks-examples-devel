@@ -18,8 +18,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.processes.v1.schemas.inputDescription",
-    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
+    "ogc.api.processes.v1.schemas.inputDescription"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml",

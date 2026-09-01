@@ -1,0 +1,44 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.examples.build-plugins.widget",
+  "name": "Build plugins example: Widget",
+  "highlighted": true,
+  "abstract": "A trivial building block used to demonstrate build (postprocessing lifecycle) plugins",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-09-01",
+  "tags": [
+    "build-plugins",
+    "examples"
+  ],
+  "group": "Examples",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/build-plugins/widget/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/build-plugins/widget/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/build-plugins/widget/schema.yaml",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/build-plugins/widget/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/build-plugins/widget/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/build-plugins/widget/",
+  "description": "This building block, together with [Gadget](../gadget), exists purely to give the\n[`bbplugin-sample-build`](https://github.com/ogcincubator/bblocks-build-plugin-sample)\nsample build plugin (declared under `plugins.build` in `bblocks-config.yaml`) more than\none bblock to run its `before_bblock`/`after_bblock` events against.\n\n`SampleBuildHooks.after_register` stamps an `x-sampleBuildPlugin` extension field onto\nthis bblock's `register.json` entry - see the [Gadget](../gadget) example and\n`register.json` itself for the result.\n",
+  "examples": [
+    {
+      "snippets": [
+        {
+          "language": "json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/build-plugins/widget/example_1_1.json",
+          "sizeBytes": 34,
+          "code": "{\n  \"widgetName\": \"Left flange\"\n}\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example Widget\nallOf:\n- type: object\n  properties:\n    widgetName:\n      type: string\n  required:\n  - widgetName\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
+  "gitPath": "_sources/build-plugins/widget"
+}

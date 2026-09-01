@@ -14,6 +14,18 @@ More complex examples will include transformation testing - testing a format can
 
 ## Building Blocks
 
+### `ogc.bbr.examples.build-plugins.gadget` — Build plugins example: Gadget
+
+**Type:** schema
+
+A second trivial building block used to demonstrate build (postprocessing lifecycle) plugins
+
+### `ogc.bbr.examples.build-plugins.widget` — Build plugins example: Widget
+
+**Type:** schema
+
+A trivial building block used to demonstrate build (postprocessing lifecycle) plugins
+
 ### `ogc.bbr.examples.feature.propertySet` — Example property set for Features
 
 **Type:** schema

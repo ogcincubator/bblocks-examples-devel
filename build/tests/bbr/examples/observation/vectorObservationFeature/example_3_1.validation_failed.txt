@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.observation.vectorObservationFeature - Custom Result for Observation Feature
-Generated 2026-09-01T08:51:36.103579+00:00
+Generated 2026-09-01T09:18:33.261505+00:00
 === Files ===
 Using examples/observationCollection.json from examples
 JSON-LD context is present - uplifting
@@ -19,9 +19,9 @@ Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape <http://example.com/rules#testGeometryHasCoordinates>: <file:///github/workspace/vector-obs-1>/geojson:geometry
- - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <file:///github/workspace/vector-obs-1>
  - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <file:///github/workspace/vector-obs-1>/geojson:geometry
+ - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <file:///github/workspace/vector-obs-1>
+ - Shape <http://example.com/rules#testGeometryHasCoordinates>: <file:///github/workspace/vector-obs-1>/geojson:geometry
 
 
 ** Validation error **
@@ -51,15 +51,15 @@ Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/prop
   	Message: sosa:observedProperty is required
   
 Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <file:///github/workspace/vector-obs-1>
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: <file:///github/workspace/vector-obs-1>
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <file:///github/workspace/vector-obs-1>
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
@@ -68,8 +68,8 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: <file:///github/workspace/vector-obs-1>
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -79,10 +79,10 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureCollectionShape: *none*
  - Shape geojson:FeatureShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 

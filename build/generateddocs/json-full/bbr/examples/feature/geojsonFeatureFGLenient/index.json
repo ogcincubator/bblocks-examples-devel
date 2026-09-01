@@ -23,8 +23,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.json-fg.feature-lenient",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.feature.propertySet",
+    "ogc.geo.json-fg.feature-lenient"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",

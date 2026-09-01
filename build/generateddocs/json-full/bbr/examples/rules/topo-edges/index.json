@@ -14,14 +14,18 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.topo.features.topo-feature-collection",
     "ogc.geo.topo.features.topo-line",
-    "ogc.ogc-utils.iri-or-curie"
+    "ogc.ogc-utils.iri-or-curie",
+    "ogc.geo.topo.features.topo-feature-collection"
   ],
   "tags": [],
   "group": "Entities",
   "highlighted": true,
   "shaclShapes": {
+    "ogc.geo.topo.features.topo-feature": [
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
     "ogc.geo.topo.features.topo-feature-collection": [
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
@@ -31,10 +35,6 @@
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-    ],
-    "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",

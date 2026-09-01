@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["gadgetName"],"required":true,"schema_type":"string","sources":["bblocks://ogc.bbr.examples.build-plugins.gadget"]}]}

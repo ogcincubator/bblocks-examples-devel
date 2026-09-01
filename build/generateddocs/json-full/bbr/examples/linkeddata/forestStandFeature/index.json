@@ -19,8 +19,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.examples.linkeddata.forestStandProperties",
-    "ogc.geo.features.feature"
+    "ogc.geo.features.feature",
+    "ogc.bbr.examples.linkeddata.forestStandProperties"
   ],
   "tags": [
     "focal",
