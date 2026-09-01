@@ -11,7 +11,7 @@ permissions:
   id-token: write
 jobs:
   validate-and-process:
-    uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
+    uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@develop
     secrets:
       sparql_username: ${{ secrets.sparql_username }}
       sparql_password: ${{ secrets.sparql_password }}
