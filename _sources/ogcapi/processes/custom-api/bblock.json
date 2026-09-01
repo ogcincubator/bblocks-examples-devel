@@ -20,7 +20,8 @@
     "baseBuildingBlock": "ogc.api.processes.v1.api",
     "extensions": {
       "ogc.api.processes.v1.schemas.inputDescription": "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
-      "ogc.api.processes.v1.schemas.outputDescription": "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions"
+      "ogc.api.processes.v1.schemas.outputDescription": "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
+      "ogc.api.processes.v1.schemas.results": "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
     }
   }
 }
