@@ -15,8 +15,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.geopose.basic.ypr",
-    "ogc.sosa.properties.observation"
+    "ogc.sosa.properties.observation",
+    "ogc.geo.geopose.basic.ypr"
   ],
   "tags": [
     "examples",
