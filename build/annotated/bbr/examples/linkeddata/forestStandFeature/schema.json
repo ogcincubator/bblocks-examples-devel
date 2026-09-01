@@ -10,7 +10,7 @@
         {
           "properties": {
             "properties": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.json"
+              "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.json"
             }
           }
         }

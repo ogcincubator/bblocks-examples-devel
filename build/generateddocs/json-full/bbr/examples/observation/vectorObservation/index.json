@@ -10,13 +10,13 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
-    "ogc.geo.geopose.basic.ypr"
+    "ogc.geo.geopose.basic.ypr",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "examples",
@@ -32,36 +32,36 @@
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
     ]
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
-  "ontology": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/ontology.ttl",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
+  "ontology": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/ontology.ttl",
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
-  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/observation/vectorObservation/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/observation/vectorObservation/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/observation/vectorObservation/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
   "examples": [
     {
       "snippets": [
         {
           "language": "json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservation/example_1_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/observation/vectorObservation/example_1_1.json",
           "sizeBytes": 427,
           "code": "{\n  \"hasFeatureOfInterest\": \"https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem\",\n  \"resultTime\": \"2023-05-22T16:41:00+2\",\n  \"observedProperty\": \"p1\",\n  \"hasResult\": {\n    \"pose\": {\n      \"position\": {\n        \"lat\": 43.46498208387333,\n        \"lon\": -3.803638278687769,\n        \"h\": 0.5\n      },\n      \"angles\": {\n        \"yaw\": 5.553,\n        \"pitch\": -0.92,\n        \"roll\": 0.33\n      }\n    }\n  }\n}\n"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservation/example_1_1.jsonld",
-          "sizeBytes": 565,
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld\",\n  \"hasFeatureOfInterest\": \"https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem\",\n  \"resultTime\": \"2023-05-22T16:41:00+2\",\n  \"observedProperty\": \"p1\",\n  \"hasResult\": {\n    \"pose\": {\n      \"position\": {\n        \"lat\": 43.46498208387333,\n        \"lon\": -3.803638278687769,\n        \"h\": 0.5\n      },\n      \"angles\": {\n        \"yaw\": 5.553,\n        \"pitch\": -0.92,\n        \"roll\": 0.33\n      }\n    }\n  }\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/observation/vectorObservation/example_1_1.jsonld",
+          "sizeBytes": 571,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld\",\n  \"hasFeatureOfInterest\": \"https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem\",\n  \"resultTime\": \"2023-05-22T16:41:00+2\",\n  \"observedProperty\": \"p1\",\n  \"hasResult\": {\n    \"pose\": {\n      \"position\": {\n        \"lat\": 43.46498208387333,\n        \"lon\": -3.803638278687769,\n        \"h\": 0.5\n      },\n      \"angles\": {\n        \"yaw\": 5.553,\n        \"pitch\": -0.92,\n        \"roll\": 0.33\n      }\n    }\n  }\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservation/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/observation/vectorObservation/example_1_1.ttl",
           "sizeBytes": 853,
           "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] sosa:hasFeatureOfInterest <https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem> ;\n    sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;\n                            geopose:roll 3.3e-01 ;\n                            geopose:yaw 5.553e+00 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat 4.346498e+01 ;\n                            geo1:long -3.803638e+00 ] ] ] ;\n    sosa:observedProperty <file:///github/workspace/p1> ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" .\n\n"
         }
@@ -69,6 +69,6 @@
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example SOSA Vector Observation\nallOf:\n- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml\n- type: object\n  properties:\n    hasResult:\n      properties:\n        pose:\n          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml\n          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose\n        distance:\n          type: number\n          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance\n      x-jsonld-id: http://www.w3.org/ns/sosa/hasResult\n  required:\n  - hasResult\n  not:\n    required:\n    - hasSimpleResult\nx-jsonld-prefixes:\n  sosa: http://www.w3.org/ns/sosa/\n  resultschema: https://w3id.org/ogc/hosted/examples/resultschema/\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/observation/vectorObservation"
 }

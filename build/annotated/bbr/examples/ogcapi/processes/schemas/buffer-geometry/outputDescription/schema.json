@@ -19,7 +19,7 @@
               "type": "string"
             },
             "schema": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json#/properties/bufferedGeometry"
+              "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json#/properties/bufferedGeometry"
             }
           }
         },
@@ -34,7 +34,7 @@
               "type": "string"
             },
             "schema": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json#/properties/area"
+              "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json#/properties/area"
             }
           }
         }

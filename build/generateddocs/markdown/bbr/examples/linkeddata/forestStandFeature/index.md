@@ -141,7 +141,7 @@ This examples shows how to define a customised schema based on an existing build
     {
       "mynamespace": "http://example.com/mythings/"
     },
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/context.jsonld"
+    "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandFeature/context.jsonld"
   ],
   "type": "Feature",
   "crs": {
@@ -281,7 +281,7 @@ $defs:
     - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
     - properties:
         properties:
-          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.yaml
+          $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.yaml
 anyOf:
 - $ref: '#/$defs/MyFeature'
 
@@ -289,8 +289,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.yaml)
 
 
 # JSON-LD Context
@@ -378,7 +378,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandFeature/context.jsonld)
 
 ## Sources
 
@@ -388,6 +388,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/ogcincubator/bblocks-examples-devel](https://github.com/ogcincubator/bblocks-examples-devel)
 * Path: `_sources/linkeddata/forestStandFeature`
 

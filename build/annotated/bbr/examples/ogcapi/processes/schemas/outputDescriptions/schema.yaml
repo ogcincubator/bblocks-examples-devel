@@ -1,2 +1,2 @@
 anyOf:
-- $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml
+- $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.propertySet - Example property set for Features",
   "bblockName": "Example property set for Features",
   "bblockId": "ogc.bbr.examples.feature.propertySet",
-  "generated": "2026-08-11T09:03:40.191263+00:00",
+  "generated": "2026-09-01T08:51:22.625806+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/examples/feature/propertySet/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/propertySet/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"

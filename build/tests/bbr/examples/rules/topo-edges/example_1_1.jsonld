@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
+    "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
     {
       "eg": "http://test-data/"
     }

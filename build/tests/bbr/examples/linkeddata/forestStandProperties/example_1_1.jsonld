@@ -3,7 +3,7 @@
     {
       "mynamespace": "http://example.com/mythings/"
     },
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld"
+    "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld"
   ],
   "LT": "2S1",
   "LES_OBL": 8,

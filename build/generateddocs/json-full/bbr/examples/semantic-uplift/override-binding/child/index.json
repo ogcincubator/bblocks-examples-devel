@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "isProfileOf": [
     "ogc.bbr.examples.semantic-uplift.override-binding.base"
   ],
@@ -36,17 +36,17 @@
   "dependsOn": [
     "ogc.bbr.examples.semantic-uplift.override-binding.base"
   ],
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/schema.yaml",
-  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/override-binding/child/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/override-binding/child/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/override-binding/child/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/child/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/child/",
   "description": "## Override Binding - Child (Profile)\n\nThis block joins its schema with the\n[Override Binding - Base](bblocks://ogc.bbr.examples.semantic-uplift.override-binding.base) building block's via\nan `allOf`/`$ref` in [schema.yaml](schema.yaml) \u2014 the same composition `extends` in `bblock.json` sets up \u2014 and\nredeclares both of the base block's property names in its own [context.jsonld](context.jsonld):\n\n* `note` \u2014 only `@id` is redeclared, narrowing `skos:note` down to `skos:definition`. Its `@type`\n  (`xsd:string`) isn't redeclared here, so it's still inherited from the base block's binding.\n* `label` \u2014 both `@id` and `@type` are redeclared, fully replacing `skos:prefLabel` (`xsd:string`) with\n  `skos:altLabel` (`xsd:language`).\n\nThis works because the postprocessor annotates each block's schema from its own context in isolation, then\nassembles the final context by walking the compiled schema's `allOf` branches in order \u2014 base branch first, own\nbranch last \u2014 so a property mapped on both sides resolves to whichever branch comes later. Placing the base\nblock's `$ref` before this block's own properties in the `allOf` is what makes this block's mapping win.\n\nLook at the assembled JSON-LD context for this block (Examples tab &rarr; RDF/Turtle, or the annotated schema) and\ncompare it to the [base block](bblocks://ogc.bbr.examples.semantic-uplift.override-binding.base)'s: `note` should\ncarry `skos:definition` as `@id` but keep `xsd:string` as `@type`, and `label` should be fully remapped to\n`skos:altLabel` / `xsd:language`.\n\nSee [overriding an inherited binding](https://ogcincubator.github.io/bblocks-docs/create/semantic-uplift#overriding-an-inherited-binding)\nin the OGC Blocks docs for the full explanation of this mechanism, including the caveat that it isn't opt-in \u2014 any\nproperty name reused from the base schema's chain is overridden the same way, whether or not that was intended.\n",
   "examples": [
     {
@@ -55,27 +55,27 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/examples/child.json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/override-binding/child/example_1_1.json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/override-binding/child/examples/child.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/semantic-uplift/override-binding/child/example_1_1.json",
           "sizeBytes": 100,
           "code": "{\n  \"note\": \"This term narrows the inherited 'note' binding to skos:definition.\",\n  \"label\": \"en\"\n}\n"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/override-binding/child/example_1_1.jsonld",
-          "sizeBytes": 247,
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld\",\n  \"note\": \"This term narrows the inherited 'note' binding to skos:definition.\",\n  \"label\": \"en\"\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/semantic-uplift/override-binding/child/example_1_1.jsonld",
+          "sizeBytes": 253,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld\",\n  \"note\": \"This term narrows the inherited 'note' binding to skos:definition.\",\n  \"label\": \"en\"\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/override-binding/child/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/semantic-uplift/override-binding/child/example_1_1.ttl",
           "sizeBytes": 249,
           "code": "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] skos:altLabel \"en\"^^xsd:language ;\n    skos:definition \"This term narrows the inherited 'note' binding to skos:definition.\"^^xsd:string .\n\n"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Profile of \"Override Binding - Base\" that redeclares \"note\" and \"label\"\n  to narrow their inherited SKOS bindings.\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml\n- type: object\n  properties:\n    note:\n      type: string\n      x-jsonld-id: http://www.w3.org/2004/02/skos/core#definition\n    label:\n      type: string\n      x-jsonld-id: http://www.w3.org/2004/02/skos/core#altLabel\n      x-jsonld-type: http://www.w3.org/2001/XMLSchema#language\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Profile of \"Override Binding - Base\" that redeclares \"note\" and \"label\"\n  to narrow their inherited SKOS bindings.\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml\n- type: object\n  properties:\n    note:\n      type: string\n      x-jsonld-id: http://www.w3.org/2004/02/skos/core#definition\n    label:\n      type: string\n      x-jsonld-id: http://www.w3.org/2004/02/skos/core#altLabel\n      x-jsonld-type: http://www.w3.org/2001/XMLSchema#language\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/semantic-uplift/override-binding/child"
 }

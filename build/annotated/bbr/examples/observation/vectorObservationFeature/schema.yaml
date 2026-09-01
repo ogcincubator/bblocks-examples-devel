@@ -7,7 +7,7 @@ $defs:
     - type: object
       properties:
         properties:
-          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
+          $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
   VectorObservationCollection:
     allOf:
     - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml

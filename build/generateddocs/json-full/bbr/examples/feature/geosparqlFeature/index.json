@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -24,20 +24,20 @@
     ]
   },
   "dependsOn": [
-    "ogc.bbr.examples.feature.propertySet",
-    "ogc.geo.features.feature"
+    "ogc.geo.features.feature",
+    "ogc.bbr.examples.feature.propertySet"
   ],
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
-  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/",
   "validationPassed": false,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
   "examples": [
     {
       "title": "Sample feature",
@@ -45,36 +45,27 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/examples/feature.json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/examples/feature.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json",
           "sizeBytes": 311,
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}\n"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.jsonld",
-          "sizeBytes": 444,
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.jsonld",
+          "sizeBytes": 450,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl",
           "sizeBytes": 656,
           "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] ;\n    geojson:geometry \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^rdf:JSON .\n\n"
         }
       ]
     }
   ],
-  "annotatedSchema": "allOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    geometry:\n      type: object\n      x-jsonld-id: https://purl.org/geojson/vocab#geometry\n      x-jsonld-type: '@json'\n    properties:\n      $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml\nx-jsonld-prefixes:\n  geojson: https://purl.org/geojson/vocab#\n",
-  "semanticUplift": {
-    "additionalSteps": [
-      {
-        "type": "shacl",
-        "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/uplift/geometry.shacl",
-        "stage": "post"
-      }
-    ]
-  },
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "annotatedSchema": "allOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    geometry:\n      type: object\n      x-jsonld-id: https://purl.org/geojson/vocab#geometry\n      x-jsonld-type: '@json'\n    properties:\n      $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/propertySet/schema.yaml\nx-jsonld-prefixes:\n  geojson: https://purl.org/geojson/vocab#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/feature/geosparqlFeature"
 }

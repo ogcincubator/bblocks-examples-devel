@@ -9,19 +9,19 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "resources": [
     {
       "role": "validation",
-      "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/schema.xsd",
+      "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/validators/validator-plugins/assets/schema.xsd",
       "format": "application/xml",
       "conformsTo": "https://www.w3.org/2001/XMLSchema"
     }
   ],
   "shaclShapes": {},
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/validators/validator-plugins/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/validators/validator-plugins/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/validators/validator-plugins/",
   "description": "This building block demonstrates the three sample validator plugins:\n\n- **ZipValidator** \u2014 verifies ZIP archive integrity using Python's stdlib `zipfile`.\n- **WktValidator** \u2014 validates WKT geometry syntax and topology using [Shapely](https://shapely.readthedocs.io/).\n- **XsdValidator** \u2014 validates XML/GML documents against XSD schemas declared as bblock validation resources.\n\nThese plugins are loaded from the [`bbplugin-sample-validators`](https://github.com/ogcincubator/bblocks-sample-validator-plugins) package via the `plugins.validators` entry in `bblocks-config.yaml`.",
   "examples": [
     {
@@ -30,8 +30,8 @@
       "snippets": [
         {
           "language": "application/zip",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/sample.zip",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip",
+          "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/validators/validator-plugins/assets/sample.zip",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip",
           "sizeBytes": 1099121,
           "binary": true
         }
@@ -43,7 +43,7 @@
       "snippets": [
         {
           "language": "text/wkt",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_2_1.text.text.wkt",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/validators/validator-plugins/example_2_1.text.text.wkt",
           "sizeBytes": 63,
           "code": "POLYGON ((0 0, 4 0, 4 4, 0 4, 0 0), (1 1, 1 2, 2 2, 2 1, 1 1))\n"
         }
@@ -55,7 +55,7 @@
       "snippets": [
         {
           "language": "application/xml",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_3_1.application.application.xml",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/validators/validator-plugins/example_3_1.application.application.xml",
           "sizeBytes": 114,
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Point>\n  <coordinates>51.5 -0.1</coordinates>\n  <srs>CRS:84</srs>\n</Point>"
         }
@@ -63,6 +63,6 @@
     }
   ],
   "annotatedSchema": null,
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/validators/validator-plugins"
 }

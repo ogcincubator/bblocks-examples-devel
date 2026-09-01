@@ -8,23 +8,23 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "shaclShapes": {
     "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
-      "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
+      "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
     ]
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
-  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
   "description": "This building block defines two custom semantic uplift steps:\n\n* A pre-processing (i.e, on the JSON documents, before applying the JSON-LD context) JQ step to create two\n  properties (`three` with the value `3`, and `doubleString` with the value of the `string` property twice).\n* A post-processing (i.e., on the RDF graph, after the JSON-LD context has been applied) SPARQL Update\n  query where two new predicates (`ex2:hasFour` and `ex2:nineBound`) are added to all subjects of `ex:hasTwo`.\n",
   "examples": [
     {
@@ -32,19 +32,19 @@
       "snippets": [
         {
           "language": "json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.json",
           "sizeBytes": 47,
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.jsonld",
-          "sizeBytes": 238,
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\",\n  \"three\": 3,\n  \"doubleString\": \"valuevalue\"\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.jsonld",
+          "sizeBytes": 244,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\",\n  \"three\": 3,\n  \"doubleString\": \"valuevalue\"\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.ttl",
           "sizeBytes": 303,
           "code": "@prefix ex: <http://example.com/> .\n@prefix ns1: <https://example.net/2/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:exHasGenThree 3 ;\n    ex:hasGenDoubleString \"valuevalue\" ;\n    ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 ;\n    ns1:hasFour 4 ;\n    ns1:nineBound false .\n\n"
         }
@@ -52,20 +52,6 @@
     }
   ],
   "annotatedSchema": "type: object\nproperties:\n  one:\n    type: number\n    x-jsonld-id: http://example.com/hasOne\n  two:\n    type: number\n    x-jsonld-id: http://example.com/hasTwo\n  string:\n    type: string\n    x-jsonld-id: http://example.com/hasString\nrequired:\n- one\nx-jsonld-extra-terms:\n  three: http://example.com/exHasGenThree\n  doubleString: http://example.com/hasGenDoubleString\nx-jsonld-prefixes:\n  ex: http://example.com/\n",
-  "semanticUplift": {
-    "additionalSteps": [
-      {
-        "type": "jq",
-        "code": ".three = 3 | .doubleString = \"\\(.string)\\(.string)\"",
-        "stage": "pre"
-      },
-      {
-        "type": "sparql-update",
-        "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/semantic-uplift/update.sparql",
-        "stage": "post"
-      }
-    ]
-  },
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/semantic-uplift/pre-and-post-uplift"
 }

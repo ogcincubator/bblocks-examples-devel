@@ -50,7 +50,7 @@ property name reused from the base schema's chain is overridden the same way, wh
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
+  "@context": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
   "note": "This term narrows the inherited 'note' binding to skos:definition.",
   "label": "en"
 }
@@ -74,7 +74,7 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: Profile of "Override Binding - Base" that redeclares "note" and "label"
   to narrow their inherited SKOS bindings.
 allOf:
-- $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
+- $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
 - type: object
   properties:
     note:
@@ -89,8 +89,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.yaml)
 
 
 # JSON-LD Context
@@ -112,7 +112,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld)
 
 ## Sources
 
@@ -123,6 +123,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/ogcincubator/bblocks-examples-devel](https://github.com/ogcincubator/bblocks-examples-devel)
 * Path: `_sources/semantic-uplift/override-binding/child`
 

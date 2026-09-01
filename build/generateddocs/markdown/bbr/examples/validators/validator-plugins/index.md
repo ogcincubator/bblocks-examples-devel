@@ -22,7 +22,7 @@ These plugins are loaded from the [`bbplugin-sample-validators`](https://github.
 The ZipValidator plugin checks that the ZIP file is not corrupt. The snippet is passed by file reference.
 
 #### application/zip
-[Download binary content](https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip)
+[Download binary content](https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip)
 
 
 ### WKT geometry (syntax and topology validation)
@@ -52,6 +52,6 @@ The XsdValidator plugin validates the XML document against the XSD schema declar
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/ogcincubator/bblocks-examples-devel](https://github.com/ogcincubator/bblocks-examples-devel)
 * Path: `_sources/validators/validator-plugins`
 

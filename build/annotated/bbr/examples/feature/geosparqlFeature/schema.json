@@ -11,7 +11,7 @@
           "x-jsonld-type": "@json"
         },
         "properties": {
-          "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
+          "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/propertySet/schema.json"
         }
       }
     }

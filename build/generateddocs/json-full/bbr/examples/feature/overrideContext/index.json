@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -40,17 +40,17 @@
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/overrideContext/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/schema.yaml",
-  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/overrideContext/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/overrideContext/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/overrideContext/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/overrideContext/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/overrideContext/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/feature/overrideContext/",
   "description": "## Feature Type based on a published schema\n\nTest for overriding a schema element.\n\nIn this case Latitude and Longitude are converted to more common options.\n",
   "examples": [
     {
@@ -60,27 +60,27 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/examples/feature.json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/overrideContext/example_1_1.json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/overrideContext/examples/feature.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/overrideContext/example_1_1.json",
           "sizeBytes": 321,
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}\n"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/overrideContext/example_1_1.jsonld",
-          "sizeBytes": 453,
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/overrideContext/example_1_1.jsonld",
+          "sizeBytes": 459,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/overrideContext/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/overrideContext/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/overrideContext/example_1_1.ttl",
           "sizeBytes": 552,
           "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature,\n        ns1:AirportFacility ;\n    rdfs:label \"control\" ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;\n    ns1:IataCode \"BMA\" ;\n    ns1:IcaoCode \"ESSB\" .\n\n"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example of a simple GeoJSON Feature specialisation\n$defs:\n  MyFeature:\n    allOf:\n    - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml\n    - properties:\n        properties:\n          properties:\n            Name:\n              x-jsonld-id: rdfs:label\nanyOf:\n- $ref: '#/$defs/MyFeature'\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example of a simple GeoJSON Feature specialisation\n$defs:\n  MyFeature:\n    allOf:\n    - $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/externalSchema/schema.yaml\n    - properties:\n        properties:\n          properties:\n            Name:\n              x-jsonld-id: rdfs:label\nanyOf:\n- $ref: '#/$defs/MyFeature'\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/feature/overrideContext"
 }

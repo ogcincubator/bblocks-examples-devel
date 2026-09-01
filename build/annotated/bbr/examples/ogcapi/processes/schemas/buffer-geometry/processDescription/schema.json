@@ -6,11 +6,11 @@
     {
       "properties": {
         "inputs": {
-          "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.json",
+          "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.json",
           "additionalProperties": false
         },
         "outputs": {
-          "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.json",
+          "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.json",
           "additionalProperties": false
         }
       }

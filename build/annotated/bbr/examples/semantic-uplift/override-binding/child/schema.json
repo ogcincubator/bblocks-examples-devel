@@ -3,7 +3,7 @@
   "description": "Profile of \"Override Binding - Base\" that redeclares \"note\" and \"label\" to narrow their inherited SKOS bindings.",
   "allOf": [
     {
-      "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.json"
     },
     {
       "type": "object",

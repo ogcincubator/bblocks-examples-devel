@@ -8,7 +8,7 @@ path	@id	schema
 /hasResult	http://www.w3.org/ns/sosa/hasResult	/github/workspace/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
 /result		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
 /result@links		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
-/hasSimpleResult		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
+/hasSimpleResult	http://www.w3.org/ns/sosa/hasSimpleResult	https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
 /hasResult/pose	https://w3id.org/ogc/hosted/examples/resultschema/pose	/github/workspace/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
 /hasResult/pose/position	http://example.com/geopose/position	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
 /hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml

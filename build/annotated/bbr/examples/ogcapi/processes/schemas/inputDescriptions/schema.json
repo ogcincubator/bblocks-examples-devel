@@ -1,7 +1,7 @@
 {
   "anyOf": [
     {
-      "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.json"
     }
   ]
 }

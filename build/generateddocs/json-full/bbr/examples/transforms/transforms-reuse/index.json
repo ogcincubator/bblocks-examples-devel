@@ -8,16 +8,16 @@
   "dateTimeAddition": "2026-05-19T00:00:00+00:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "shaclShapes": {},
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-reuse/schema.yaml",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-reuse/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/transforms/transforms-reuse/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/transforms/transforms-reuse/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-reuse/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/transforms/transforms-reuse/",
   "transforms": [
     {
       "id": "reuse-uppercase-keys",
@@ -194,41 +194,41 @@
       "snippets": [
         {
           "language": "json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/example_1_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/example_1_1.json",
           "transformResults": {
             "reuse-uppercase-keys": {
               "success": true,
               "sizeBytes": 102,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.reuse-uppercase-keys.json"
+              "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.reuse-uppercase-keys.json"
             },
             "reuse-jq-inline": {
               "success": true,
               "sizeBytes": 217,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.reuse-jq-inline.json"
+              "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.reuse-jq-inline.json"
             },
             "reuse-node-metadata": {
               "success": true,
               "sizeBytes": 169,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.reuse-node-metadata.json"
+              "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.reuse-node-metadata.json"
             },
             "node-calls-jq": {
               "success": true,
               "sizeBytes": 226,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.node-calls-jq.json"
+              "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.node-calls-jq.json"
             },
             "node-calls-python": {
               "success": true,
               "sizeBytes": 135,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.node-calls-python.json"
+              "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.node-calls-python.json"
             },
             "node-calls-python-calls-jq": {
               "success": true,
               "sizeBytes": 255,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.node-calls-python-calls-jq.json"
+              "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-reuse/transforms/example_1_1.node-calls-python-calls-jq.json"
             },
             "reuse-error-propagation": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3pm3n3o2.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp3pm3n3o2.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf_4ex0vk.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmpf_4ex0vk.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             }
           },
           "sizeBytes": 62,
@@ -238,6 +238,6 @@
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A simple JSON object used to demonstrate transform reuse\ntype: object\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/transforms/transforms-reuse"
 }

@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -27,7 +27,7 @@
   ],
   "maturity": "development",
   "scope": "unstable",
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
   "dependsOn": [
     "ogc.geo.features.feature"
   ],
@@ -42,15 +42,15 @@
     ]
   },
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/externalSchema/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/schema.yaml",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/externalSchema/schema.yaml",
   "sourceLdContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/externalSchema/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/externalSchema/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/feature/externalSchema/",
   "description": "## Feature Type based on a published schema\n\nThis example shows how an existing schema can be used to define a payload for a _container model_ such as the OGC API Features ```feature``` schema.\n\nThis particular example uses a schema defined in another message-oriented environment, and **highlights support for the practice of using JSON-LD contexts to document schemas.**\n\nThe OGC Building Blocks uses the same approach, with the added capabilities around example validation and mechanisms for composition into other structures. BuildingBlocks provides for transparent dependencies.\n\n\n",
   "examples": [
     {
@@ -60,20 +60,20 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/examples/feature.json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/externalSchema/examples/feature.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
           "sizeBytes": 321,
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}\n"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.jsonld",
-          "sizeBytes": 452,
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/externalSchema/example_1_1.jsonld",
+          "sizeBytes": 458,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/externalSchema/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      59.354444,\n      17.939722\n    ]\n  },\n  \"properties\": {\n    \"id\": \"urn:ngsi-ld:AirportFacility:id:IUXP:30337114\",\n    \"type\": \"AirportFacility\",\n    \"IataCode\": \"BMA\",\n    \"IcaoCode\": \"ESSB\",\n    \"Name\": \"control\"\n  }\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/feature/externalSchema/example_1_1.ttl",
           "sizeBytes": 494,
           "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature,\n        ns1:AirportFacility ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;\n    ns1:IataCode \"BMA\" ;\n    ns1:IcaoCode \"ESSB\" ;\n    ns1:Name \"control\" .\n\n"
         }
@@ -81,6 +81,6 @@
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example of a simple GeoJSON Feature specialisation using an externally\n  defined JSON-LD context.\n$defs:\n  MyFeature:\n    allOf:\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n    - properties:\n        properties:\n          $ref: https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/AirportFacility/schema.json\nanyOf:\n- $ref: '#/$defs/MyFeature'\nx-jsonld-extra-terms:\n  AirportElevation: https://smartdatamodels.org/dataModel.ACRIS/AirportElevation\n  AirportElevationUnitOfMeasurement: https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement\n  AirportFacility: https://smartdatamodels.org/dataModel.ACRIS/AirportFacility\n  AirportLocation: https://smartdatamodels.org/dataModel.ACRIS/AirportLocation\n  CheckpointAreaLocation: https://smartdatamodels.org/dataModel.ACRIS/CheckpointAreaLocation\n  CheckpointFacility: https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacility\n  CheckpointFacilityOperatorParty: https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacilityOperatorParty\n  CheckpointFacilityType: https://smartdatamodels.org/dataModel.ACRIS/CheckpointFacilityType\n  ClosingTime: https://smartdatamodels.org/dataModel.ACRIS/ClosingTime\n  Code: https://smartdatamodels.org/dataModel.ACRIS/Code\n  ConcourseFacility: https://smartdatamodels.org/dataModel.ACRIS/ConcourseFacility\n  Description: https://smartdatamodels.org/dataModel.ACRIS/Description\n  EndTime: https://smartdatamodels.org/dataModel.ACRIS/EndTime\n  IataCode: https://smartdatamodels.org/dataModel.ACRIS/IataCode\n  IcaoCode: https://smartdatamodels.org/dataModel.ACRIS/IcaoCode\n  Identifier: https://smartdatamodels.org/dataModel.ACRIS/Identifier\n  Latitude: https://smartdatamodels.org/dataModel.ACRIS/Latitude\n  Longitude: https://smartdatamodels.org/dataModel.ACRIS/Longitude\n  MeasurementDevice: https://smartdatamodels.org/dataModel.ACRIS/MeasurementDevice\n  MeasurementDeviceLocation: https://smartdatamodels.org/dataModel.ACRIS/MeasurementDeviceLocation\n  MeasurementTimePeriod: https://smartdatamodels.org/dataModel.ACRIS/MeasurementTimePeriod\n  Name: https://smartdatamodels.org/dataModel.ACRIS/Name\n  Occupancy: https://smartdatamodels.org/dataModel.ACRIS/Occupancy\n  OpeningTime: https://smartdatamodels.org/dataModel.ACRIS/OpeningTime\n  OperationTimePeriod: https://smartdatamodels.org/dataModel.ACRIS/OperationTimePeriod\n  PassengerProcess: https://smartdatamodels.org/dataModel.ACRIS/PassengerProcess\n  PassengerProcessType: https://smartdatamodels.org/dataModel.ACRIS/PassengerProcessType\n  PassengerQueue: https://smartdatamodels.org/dataModel.ACRIS/PassengerQueue\n  ProjectedWaitTime: https://smartdatamodels.org/dataModel.ACRIS/ProjectedWaitTime\n  QueueLocation: https://smartdatamodels.org/dataModel.ACRIS/QueueLocation\n  QueueMeasurement: https://smartdatamodels.org/dataModel.ACRIS/QueueMeasurement\n  QueueStatus: https://smartdatamodels.org/dataModel.ACRIS/QueueStatus\n  QueueType: https://smartdatamodels.org/dataModel.ACRIS/QueueType\n  Srid: https://smartdatamodels.org/dataModel.ACRIS/Srid\n  TerminalAreaLocation: https://smartdatamodels.org/dataModel.ACRIS/TerminalAreaLocation\n  TerminalFacility: https://smartdatamodels.org/dataModel.ACRIS/TerminalFacility\n  Throughput: https://smartdatamodels.org/dataModel.ACRIS/Throughput\n  Value: https://smartdatamodels.org/dataModel.ACRIS/Value\n  WaitTime: https://smartdatamodels.org/dataModel.ACRIS/WaitTime\n  ZoneAreaLocation: https://smartdatamodels.org/dataModel.ACRIS/ZoneAreaLocation\n  id: '@id'\n  type: '@type'\nx-jsonld-prefixes:\n  ngsi-ld: https://uri.etsi.org/ngsi-ld/\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/feature/externalSchema"
 }

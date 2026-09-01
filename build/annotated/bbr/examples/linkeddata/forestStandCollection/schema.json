@@ -8,7 +8,7 @@
       "properties": {
         "features": {
           "items": {
-            "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.json"
+            "$ref": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.json"
           }
         }
       }

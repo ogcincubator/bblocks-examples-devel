@@ -150,4 +150,4 @@ path	@id	schema
 /place/_oneOf/16/geometries/_oneOf/2/type		https://beta.schemas.opengis.net/json-fg/geometry-object.json
 /place/_oneOf/16/bbox		https://beta.schemas.opengis.net/json-fg/geometry-object.json
 /place/_oneOf/17/type		https://beta.schemas.opengis.net/json-fg/geometry-object.json
-/properties/myProp	http://example.org/myModel/myProp	https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
+/properties/myProp	http://example.org/myModel/myProp	https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/propertySet/schema.yaml

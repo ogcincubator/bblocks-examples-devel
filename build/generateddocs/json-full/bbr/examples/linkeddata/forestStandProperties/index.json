@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2026-08-11",
+  "dateOfLastChange": "2026-09-01",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -28,17 +28,17 @@
     "schema"
   ],
   "shaclShapes": {},
-  "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld",
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/schema.yaml",
-  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/context.jsonld",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/linkeddata/forestStandProperties/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/linkeddata/forestStandProperties/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/linkeddata/forestStandProperties/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandProperties/",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/linkeddata/forestStandProperties/",
   "description": "## Forest Stand Description Properties\n\nA simple schema with attributes relating to forest characteristics.\n\nThis model is based on the Czech language, but the realted ontology linbked with the JSON-LD semantic uplift is a multi-lingual description of these. \n\nThe Map View of features using these attributes will automatically exploit this to resolve and display language specific descriptions.",
   "examples": [
     {
@@ -50,21 +50,21 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/examples/feature.json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/linkeddata/forestStandCollection/examples/feature.json",
           "json-path": "$.features[0].properties",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/linkeddata/forestStandProperties/example_1_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/linkeddata/forestStandProperties/example_1_1.json",
           "sizeBytes": 271,
           "code": "{\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}"
         },
         {
           "language": "jsonld",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/linkeddata/forestStandProperties/example_1_1.jsonld",
-          "sizeBytes": 488,
-          "code": "{\n  \"@context\": [\n    {\n      \"mynamespace\": \"http://example.com/mythings/\"\n    },\n    \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld\"\n  ],\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}"
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/linkeddata/forestStandProperties/example_1_1.jsonld",
+          "sizeBytes": 494,
+          "code": "{\n  \"@context\": [\n    {\n      \"mynamespace\": \"http://example.com/mythings/\"\n    },\n    \"https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld\"\n  ],\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}"
         },
         {
           "language": "ttl",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/linkeddata/forestStandProperties/example_1_1.ttl",
+          "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/linkeddata/forestStandProperties/example_1_1.ttl",
           "sizeBytes": 649,
           "code": "@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] focal-prop:lesniCHS 25 ;\n    focal-prop:lesniDSOPRL 2025 ;\n    focal-prop:lesniID1 128301 ;\n    focal-prop:lesniOVERT \"NE\" ;\n    focal-prop:lesniOblast 8 ;\n    focal-prop:lesniOblastCast \"a\" ;\n    focal-prop:lesniPCHS \"25a\" ;\n    focal-prop:lesniPLOCHA 1.22425e+03 ;\n    focal-prop:lesniROKMAP 2015 ;\n    focal-prop:lesniSLT \"2S\" ;\n    focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n    focal-prop:lesniUDRZBA 2022 ;\n    focal-prop:lesniZADOST \"-\" ;\n    focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" .\n\n"
         }
@@ -72,6 +72,6 @@
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  LT:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniTyp\n    x-jsonld-type: '@id'\n    x-jsonld-base: https://w3id.org/ogc/hosted/focal/lt/\n  LES_OBL:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniOblast\n  LO_CAST:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast\n  UDRZBA:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA\n  ZMENA:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniZMENA\n  ZADOST:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniZADOST\n  CHS:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniCHS\n  PCHS:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniPCHS\n  OVER_T:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniOVERT\n  ROK_MAP:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP\n  ID1:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniID1\n  SLT:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniSLT\n  PLOCHA:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA\n  DS_OPRL:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL\nrequired:\n- LT\nx-jsonld-prefixes:\n  focal-prop: https://w3id.org/ogc/hosted/focal/properties/\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/linkeddata/forestStandProperties"
 }

@@ -14,7 +14,7 @@
     "dateTimeAddition": "2024-10-03T11:31:00+02:00",
     "itemClass": "schema",
     "version": "0.1",
-    "dateOfLastChange": "2026-08-11",
+    "dateOfLastChange": "2026-09-01",
     "shaclShapes": [],
     "ldContext": "_sources/transforms/transforms-example/context.jsonld"
   },
@@ -25,50 +25,50 @@
   "snippet_index": 0,
   "snippet": {
     "language": "json",
-    "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json",
+    "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json",
     "transformResults": {
       "prefix-keys": {
         "success": true,
         "sizeBytes": 59,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
       },
       "inline-transform": {
         "success": true,
         "sizeBytes": 146,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
       },
       "python-uppercase-keys": {
         "success": true,
         "sizeBytes": 47,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-uppercase-keys.json"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-uppercase-keys.json"
       },
       "node-add-metadata": {
         "success": true,
         "sizeBytes": 90,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-add-metadata.json"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-add-metadata.json"
       },
       "python-to-csv": {
         "success": true,
         "sizeBytes": 25,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-to-csv.csv"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-to-csv.csv"
       },
       "node-to-csv": {
         "success": true,
         "sizeBytes": 32,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-to-csv.csv"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-to-csv.csv"
       },
       "jq-error": {
         "success": false,
-        "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 605, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 932, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 373, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
+        "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 606, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 1130, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 373, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
       },
       "python-error": {
         "success": false,
-        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpbalxmtmh.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvyp2kos2.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
       },
       "jinja2-html": {
         "success": true,
         "sizeBytes": 96,
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
+        "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
       }
     }
   },
@@ -79,9 +79,9 @@
   "annotated_schema_path": "build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
   "jsonld_context_path": "build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "shacl_shapes_paths": [],
-  "base_url": "https://ogcincubator.github.io/bblocks-examples/",
-  "github_base_url": "https://github.com/ogcincubator/bblocks-examples/blob/master/",
-  "git_repository": "https://github.com/ogcincubator/bblocks-examples",
+  "base_url": "https://ogcincubator.github.io/bblocks-examples-devel/",
+  "github_base_url": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/",
+  "git_repository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "id_prefix": "ogc.bbr.examples.",
   "imported_register_urls": [
     "https://opengeospatial.github.io/bblocks/register.json",
