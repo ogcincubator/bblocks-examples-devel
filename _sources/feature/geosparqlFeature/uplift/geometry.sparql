@@ -1,0 +1,20 @@
+PREFIX geojson: <https://purl.org/geojson/vocab#>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# Replace the JSON-encoded geometry (as uplifted via the local @json context override)
+# with a GeoSPARQL geometry, so the feature keeps conforming to the inherited
+# GeoJSON Feature shape (which requires geojson:geometry to be a node, or absent).
+DELETE {
+  ?feature geojson:geometry ?geojson .
+}
+INSERT {
+  ?feature geosparql:hasGeometry [
+    geosparql:asGeoJson ?geojsonLiteral
+  ] .
+}
+WHERE {
+  ?feature geojson:geometry ?geojson .
+  FILTER(DATATYPE(?geojson) = rdf:JSON)
+  BIND(STRDT(STR(?geojson), geosparql:geoJSONLiteral) AS ?geojsonLiteral)
+}
