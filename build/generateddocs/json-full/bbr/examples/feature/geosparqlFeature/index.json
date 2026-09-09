@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-01",
+  "dateOfLastChange": "2026-09-09",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -24,8 +24,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.feature.propertySet",
+    "ogc.geo.features.feature"
   ],
   "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "schema": {
@@ -38,6 +38,14 @@
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/feature/geosparqlFeature/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
+  "semanticUplift": {
+    "additionalSteps": [
+      {
+        "type": "sparql-update",
+        "code": "PREFIX geojson: <https://purl.org/geojson/vocab#>\nPREFIX geosparql: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\n# Replace the JSON-encoded geometry (as uplifted via the local @json context override)\n# with a GeoSPARQL geometry, so the feature keeps conforming to the inherited\n# GeoJSON Feature shape (which requires geojson:geometry to be a node, or absent).\nDELETE {\n  ?feature geojson:geometry ?geojson .\n}\nINSERT {\n  ?feature geosparql:hasGeometry [\n    geosparql:asGeoJson ?geojsonLiteral\n  ] .\n}\nWHERE {\n  ?feature geojson:geometry ?geojson .\n  FILTER(DATATYPE(?geojson) = rdf:JSON)\n  BIND(STRDT(STR(?geojson), geosparql:geoJSONLiteral) AS ?geojsonLiteral)\n}\n"
+      }
+    ]
+  },
   "examples": [
     {
       "title": "Sample feature",

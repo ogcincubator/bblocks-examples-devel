@@ -10,13 +10,13 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-01",
+  "dateOfLastChange": "2026-09-09",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
-    "ogc.geo.geopose.basic.ypr"
+    "ogc.geo.geopose.basic.ypr",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "examples",
@@ -30,6 +30,9 @@
   "shaclShapes": {
     "ogc.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ],
+    "ogc.sosa.properties.execution": [
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",

@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-01",
+  "dateOfLastChange": "2026-09-09",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -19,10 +19,10 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
-    "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.features.observation",
-    "ogc.sosa.features.observationCollection"
+    "ogc.sosa.features.observationCollection",
+    "ogc.bbr.examples.observation.vectorObservation",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "sosa",
@@ -39,6 +39,9 @@
     ],
     "ogc.sosa.properties.observation": [
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+    ],
+    "ogc.sosa.properties.execution": [
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
     ],
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"

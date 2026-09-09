@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.feature - Feature",
   "bblockName": "Feature",
   "bblockId": "ogc.geo.features.feature",
-  "generated": "2026-09-01T11:16:59.341432+00:00",
+  "generated": "2026-09-09T13:24:03.607056+00:00",
   "result": false,
   "items": [
     {
@@ -11,18 +11,7 @@
         "requireFail": false,
         "filename": "build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
         "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
-        "language": {
-          "id": "geojson",
-          "defaultExtension": "geojson",
-          "label": "GeoJSON",
-          "mimeType": "application/geo+json",
-          "aliases": [
-            "geojson"
-          ],
-          "extensions": [
-            "geojson"
-          ]
-        },
+        "language": "application/geo+json",
         "transformId": "python-geojson"
       },
       "result": false,
@@ -34,7 +23,7 @@
             {
               "exception": "AttributeError",
               "isError": true,
-              "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 388, in validate_transform_output\n    validation_resources=profile_bblock.validation_resources,\n,AttributeError: 'ImportedBBlockProxy' object has no attribute 'validation_resources'\n"
+              "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 401, in validate_transform_output\n    validation_resources=profile_bblock.validation_resources,\n,AttributeError: 'ImportedBBlockProxy' object has no attribute 'validation_resources'\n"
             }
           ]
         }

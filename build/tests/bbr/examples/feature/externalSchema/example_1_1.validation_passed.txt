@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)
-Generated 2026-09-01T11:16:45.670967+00:00
+Generated 2026-09-09T13:23:41.368776+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:FeatureShape: <http://example.com/features/f1>
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*

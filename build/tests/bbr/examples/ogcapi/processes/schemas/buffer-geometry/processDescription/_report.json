@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription - Buffer geometry process description",
   "bblockName": "Buffer geometry process description",
   "bblockId": "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
-  "generated": "2026-09-01T11:16:51.365095+00:00",
+  "generated": "2026-09-09T13:23:46.623949+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

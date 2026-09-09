@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-09-01",
+  "dateOfLastChange": "2026-09-09",
   "shaclShapes": {
     "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
       "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -25,6 +25,18 @@
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples-devel/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
+  "semanticUplift": {
+    "additionalSteps": [
+      {
+        "type": "jq",
+        "code": ".three = 3 | .doubleString = \"\\(.string)\\(.string)\""
+      },
+      {
+        "type": "sparql-update",
+        "code": "PREFIX ex: <http://example.com/>\nPREFIX ex2: <https://example.net/2/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nINSERT {\n  ?s ex2:hasFour ?hasFour;\n    ex2:nineBound ?nineBound .\n} WHERE {\n  ?s ex:hasTwo ?hasTwo\n  BIND(xsd:integer(?hasTwo * 2) as ?hasFour) .\n  OPTIONAL {\n    ?s ex:hasNine ?nine .\n  }\n  BIND(BOUND(?nine) as ?nineBound)\n}"
+      }
+    ]
+  },
   "description": "This building block defines two custom semantic uplift steps:\n\n* A pre-processing (i.e, on the JSON documents, before applying the JSON-LD context) JQ step to create two\n  properties (`three` with the value `3`, and `doubleString` with the value of the `string` property twice).\n* A post-processing (i.e., on the RDF graph, after the JSON-LD context has been applied) SPARQL Update\n  query where two new predicates (`ex2:hasFour` and `ex2:nineBound`) are added to all subjects of `ex:hasTwo`.\n",
   "examples": [
     {

@@ -110,12 +110,6 @@ This example shows a simple customisation method for OGC API Feature schemas
 
 This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object
 
-### `ogc.bbr.examples.observation.vectorObservation` — Observation Result (Vector based on GeoPose)
-
-**Type:** schema
-
-This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
-
 ### `ogc.bbr.examples.linkeddata.forestStandFeature` — Semantic Feature
 
 **Type:** schema
@@ -133,6 +127,12 @@ This example shows a simple customisation method for a JSON-FG (lenient) feature
 **Type:** schema
 
 This example shows a simple customisation for OGC API Feature using an externally defined domain schema.
+
+### `ogc.bbr.examples.observation.vectorObservation` — Observation Result (Vector based on GeoPose)
+
+**Type:** schema
+
+This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
 
 ### `ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription` — Buffer geometry process input description
 
@@ -170,17 +170,17 @@ Description of the buffer geometry process
 
 Collection of output descriptions
 
-### `ogc.bbr.examples.observation.vectorObservationFeature` — Custom Result for Observation Feature
-
-**Type:** schema
-
-This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model
-
 ### `ogc.bbr.examples.rules.topo-edges` — Topo rules examples
 
 **Type:** schema
 
 Demonstrates inheritance of rules (in this case for topology using feature references - that cannot be expressed in schemas.
+
+### `ogc.bbr.examples.observation.vectorObservationFeature` — Custom Result for Observation Feature
+
+**Type:** schema
+
+This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model
 
 ### `ogc.bbr.examples.ogcapi.processes.custom-api` — Custom OGC API processes instance
 
