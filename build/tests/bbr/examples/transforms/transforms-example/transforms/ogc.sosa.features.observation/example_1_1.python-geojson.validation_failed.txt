@@ -1,12 +1,57 @@
 Validation report for ogc.sosa.features.observation - SOSA Observation Feature
-Generated 2026-09-09T13:24:03.606798+00:00
-=== Unknown errors ===
+Generated 2026-10-08T16:40:52.336742+00:00
+=== Files ===
+Using example_1_1.python-geojson.geojson from transform outputs
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.python-geojson.jsonld created
+Output Turtle example_1_1.python-geojson.ttl created
+=== End Files ===
+
+=== JSON Schema ===
 
 ** Validation error **
-Traceback (most recent call last):
-,  File "/src/ogc/bblocks/validate.py", line 401, in validate_transform_output
-    validation_resources=profile_bblock.validation_resources,
-,AttributeError: 'ImportedBBlockProxy' object has no attribute 'validation_resources'
+ValidationError: {'one': 1, 'two': 2, 'string': 'value'} is not valid under any of the given schemas
 
-=== End Unknown errors ===
+Failed validating 'anyOf' in schema['allOf'][1]['properties']['properties']['allOf'][1]:
+    {'anyOf': [{'required': ['hasResult']},
+               {'required': ['hasSimpleResult']}]}
+
+On instance['properties']:
+    {'one': 1, 'string': 'value', 'two': 2}
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Na06f57f2a07f4e6bb992bd940467cd09
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+
+Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*
+
+Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*
+
+=== End SHACL ===
 

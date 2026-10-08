@@ -432,6 +432,7 @@ Links to the schema:
     "Ring": "topo:Ring",
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
+    "AggregateSolid": "topo:AggregateSolid",
     "rings": {
       "@id": "topo:rings",
       "@container": "@list"
