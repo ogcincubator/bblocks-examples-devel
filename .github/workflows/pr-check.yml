@@ -1,0 +1,7 @@
+name: Validate Building Blocks PR
+on:
+  pull_request:
+
+jobs:
+  pr-check:
+    uses: opengeospatial/bblocks-postprocess/.github/workflows/pr-check.yml@develop
