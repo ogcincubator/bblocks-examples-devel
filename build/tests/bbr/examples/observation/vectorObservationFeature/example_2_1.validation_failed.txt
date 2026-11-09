@@ -1,0 +1,116 @@
+Validation report for ogc.bbr.examples.observation.vectorObservationFeature - Custom Result for Observation Feature
+Generated 2026-11-09T11:36:55.810909+00:00
+=== Files ===
+Using examples/observationCollection.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_2_1.jsonld created
+Output Turtle example_2_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: {'id': 'c1', 'type': 'FeatureCollection', 'featureType': 'sosa:ObservationCollection', 'observedProperty': 'https://example.org/def/observableProperties/geopose', 'features': [{'id': 'vector-obs-1', 'type': 'Feature', 'geometry': {'type': 'LineString', 'coordinates': [[-111.67183507997295, 40.056709946862874], [-111.71, 40.156709946862875]]}, 'time': None, 'place': None, 'properties': {'hasFeatureOfInterest': 'eg:Traverse-P1-P2', 'observedProperty': 'https://example.org/def/observableProperties/geopose', 'resultTime': '2023-05-22T16:41:00+2', 'hasResult': {'pose': {'position': {'lat': -111.67183507997295, 'lon': 40.056709946862874, 'h': 0.5}, 'angles': {'yaw': 15.35, 'pitch': -0.01, 'roll': 0}}, 'distance': 6889234.2}}}]} is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema:
+    {'$defs': {'VectorObservation': {'allOf': [{'$ref': 'https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml'},
+                                               {'properties': {'properties': {'$ref': 'https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml'}},
+                                                'type': 'object'}]},
+               'VectorObservationCollection': {'allOf': [{'$ref': 'https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml'},
+                                                         {'properties': {'features': {'items': {'$ref': '#/$defs/VectorObservation'},
+                                                                                      'type': 'array'}},
+                                                          'type': 'object'}]}},
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'anyOf': [{'$ref': '#/$defs/VectorObservation'},
+               {'$ref': '#/$defs/VectorObservationCollection'}],
+     'description': 'Example SOSA Observation Specialisation - a vector '
+                    'bearing and distance',
+     'x-bblocks-metadata': {'dateOfLastChange': '2026-11-09',
+                            'itemIdentifier': 'ogc.bbr.examples.observation.vectorObservationFeature',
+                            'register': 'https://ogcincubator.github.io/bblocks-examples-devel/build/register.json',
+                            'version': '1.0'}}
+
+On instance:
+    {'featureType': 'sosa:ObservationCollection',
+     'features': [{'geometry': {'coordinates': [[-111.67183507997295,
+                                                 40.056709946862874],
+                                                [-111.71,
+                                                 40.156709946862875]],
+                                'type': 'LineString'},
+                   'id': 'vector-obs-1',
+                   'place': None,
+                   'properties': {'hasFeatureOfInterest': 'eg:Traverse-P1-P2',
+                                  'hasResult': {'distance': 6889234.2,
+                                                'pose': {'angles': {'pitch': -0.01,
+                                                                    'roll': 0,
+                                                                    'yaw': 15.35},
+                                                         'position': {'h': 0.5,
+                                                                      'lat': -111.67183507997295,
+                                                                      'lon': 40.056709946862874}}},
+                                  'observedProperty': 'https://example.org/def/observableProperties/geopose',
+                                  'resultTime': '2023-05-22T16:41:00+2'},
+                   'time': None,
+                   'type': 'Feature'}],
+     'id': 'c1',
+     'observedProperty': 'https://example.org/def/observableProperties/geopose',
+     'type': 'FeatureCollection'}
+=== End JSON Schema ===
+
+=== SHACL ===
+Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/observation/vectorObservation/ontology.ttl
+Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
+ - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry
+ - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry
+ - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>
+
+Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: <http://example.com/features/c1>
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: <http://example.com/features/vector-obs-1>
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
+
+Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl:
+ - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <http://example.com/features/vector-obs-1>
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: <http://example.com/features/c1>
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: <http://example.com/features/c1>
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: <http://example.com/features/vector-obs-1>
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <http://example.com/features/vector-obs-1>
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <http://example.com/features/vector-obs-1>
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+
+=== End SHACL ===
+

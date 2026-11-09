@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-09-21",
+  "dateOfLastChange": "2026-11-09",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -488,11 +488,11 @@
             },
             "jq-error": {
               "success": false,
-              "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 611, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 1206, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 373, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
+              "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 612, in apply_transforms\n    result = transformer.transform(transform_metadata)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/src/ogc/bblocks/models.py\", line 1209, in transform\n    output = self.do_transform(metadata)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"jq.pyx\", line 377, in genexpr\n  File \"jq.pyx\", line 377, in genexpr\n  File \"jq.pyx\", line 427, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
             },
             "python-error": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpv9n6uop8.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfywd8pqz.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             },
             "jinja2-html": {
               "success": true,
@@ -501,12 +501,12 @@
             },
             "dump-context": {
               "success": true,
-              "sizeBytes": 6502,
+              "sizeBytes": 6697,
               "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.dump-context.json"
             },
             "python-geojson": {
               "success": true,
-              "sizeBytes": 243,
+              "sizeBytes": 244,
               "url": "https://ogcincubator.github.io/bblocks-examples-devel/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
               "profilesValidation": {
                 "ogc.geo.features.feature": {
@@ -582,7 +582,7 @@
       ]
     }
   ],
-  "annotatedSchema": "type: object\nproperties:\n  one:\n    type: number\n    x-jsonld-id: http://example.com/hasOne\n  two:\n    type: number\n    x-jsonld-id: http://example.com/hasTwo\n  string:\n    type: string\n    x-jsonld-id: http://example.com/hasString\nx-jsonld-prefixes:\n  ex: http://example.com/\n",
+  "annotatedSchema": "type: object\nproperties:\n  one:\n    type: number\n    x-jsonld-id: http://example.com/hasOne\n  two:\n    type: number\n    x-jsonld-id: http://example.com/hasTwo\n  string:\n    type: string\n    x-jsonld-id: http://example.com/hasString\nx-jsonld-prefixes:\n  ex: http://example.com/\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.transforms.transforms-example\n  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-09'\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/transforms/transforms-example"
 }

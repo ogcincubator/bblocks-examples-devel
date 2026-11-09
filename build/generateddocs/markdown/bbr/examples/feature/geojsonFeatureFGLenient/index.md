@@ -122,6 +122,11 @@ allOf:
 - properties:
     properties:
       $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/propertySet/schema.yaml
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.feature.geojsonFeatureFGLenient
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

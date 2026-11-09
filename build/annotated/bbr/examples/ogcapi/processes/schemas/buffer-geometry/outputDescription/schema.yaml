@@ -24,3 +24,8 @@ properties:
             type: string
           schema:
             $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml#/properties/area
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'

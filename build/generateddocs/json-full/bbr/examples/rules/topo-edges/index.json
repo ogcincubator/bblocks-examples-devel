@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "isc",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-21",
+  "dateOfLastChange": "2026-11-09",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -23,18 +23,21 @@
   "highlighted": true,
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
-    ],
-    "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.geo.topo.features.topo-feature": [
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+    ],
+    "ogc.geo.topo.ontology": [
+      "https://ogcincubator.github.io/topo-feature/_sources/ontology/shapes.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
@@ -118,7 +121,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: http://json-schema.org/draft/2020-12/schema\ntitle: Nodes and Edges bundle\n$defs:\n  TopoLine:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml\n  FeatureOptions:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions\n  FeatureCollectionOptions:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions\n  PointFeature:\n    allOf:\n    - $ref: '#/$defs/FeatureOptions'\n    - properties:\n        geometry:\n          allOf:\n          - properties:\n              type:\n                type: string\n                const: Point\n      required:\n      - geometry\nproperties:\n  id:\n    description: The unique id for this object that can be persisted in the knowledge\n      base as an IRI, so it must conform to a full URI or a CURIE that references\n      an appropriate namespace.\n    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml\n    x-jsonld-id: '@id'\n  nodes:\n    anyOf:\n    - allOf:\n      - $ref: '#/$defs/FeatureCollectionOptions'\n      - properties:\n          features:\n            type: array\n            items:\n              $ref: '#/$defs/PointFeature'\n    - type: array\n      items:\n        $ref: '#/$defs/PointFeature'\n  edges:\n    anyOf:\n    - type: array\n      items:\n        $ref: '#/$defs/TopoLine'\n    - allOf:\n      - $ref: '#/$defs/FeatureCollectionOptions'\n      - properties:\n          features:\n            type: array\n            items:\n              $ref: '#/$defs/TopoLine'\nx-jsonld-vocab: https://example.com/edges/\n",
+  "annotatedSchema": "$schema: http://json-schema.org/draft/2020-12/schema\ntitle: Nodes and Edges bundle\n$defs:\n  TopoLine:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml\n  FeatureOptions:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions\n  FeatureCollectionOptions:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions\n  PointFeature:\n    allOf:\n    - $ref: '#/$defs/FeatureOptions'\n    - properties:\n        geometry:\n          allOf:\n          - properties:\n              type:\n                type: string\n                const: Point\n      required:\n      - geometry\nproperties:\n  id:\n    description: The unique id for this object that can be persisted in the knowledge\n      base as an IRI, so it must conform to a full URI or a CURIE that references\n      an appropriate namespace.\n    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml\n    x-jsonld-id: '@id'\n  nodes:\n    anyOf:\n    - allOf:\n      - $ref: '#/$defs/FeatureCollectionOptions'\n      - properties:\n          features:\n            type: array\n            items:\n              $ref: '#/$defs/PointFeature'\n    - type: array\n      items:\n        $ref: '#/$defs/PointFeature'\n  edges:\n    anyOf:\n    - type: array\n      items:\n        $ref: '#/$defs/TopoLine'\n    - allOf:\n      - $ref: '#/$defs/FeatureCollectionOptions'\n      - properties:\n          features:\n            type: array\n            items:\n              $ref: '#/$defs/TopoLine'\nx-jsonld-vocab: https://example.com/edges/\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.rules.topo-edges\n  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-11-09'\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/rules/topo-edges"
 }

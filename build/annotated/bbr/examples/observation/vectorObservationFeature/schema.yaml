@@ -20,3 +20,8 @@ $defs:
 anyOf:
 - $ref: '#/$defs/VectorObservation'
 - $ref: '#/$defs/VectorObservationCollection'
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.observation.vectorObservationFeature
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'

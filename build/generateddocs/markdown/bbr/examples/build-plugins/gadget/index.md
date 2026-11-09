@@ -42,6 +42,11 @@ allOf:
       type: string
   required:
   - gadgetName
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.build-plugins.gadget
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

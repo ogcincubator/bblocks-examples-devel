@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Upgrade http:// subresources only when served over https; plain-http
+    // viewers (e.g. local testing against http://localhost registers) are left alone.
+    if (location.protocol === 'https:') {
+      var csp = document.createElement('meta');
+      csp.httpEquiv = 'Content-Security-Policy';
+      csp.content = 'upgrade-insecure-requests';
+      document.head.appendChild(csp);
+    }
+  </script>
+  <link rel="icon" href="https://ogcincubator.github.io/bblocks-viewer/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoPose</title>
+  <meta name="description" content="[GeoPose](https://www.geopose.org/) Building Blocks" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GeoPose" />
+  <meta property="og:description" content="[GeoPose](https://www.geopose.org/) Building Blocks" />
+  <meta property="og:url" content="https://opengeospatial.github.io/bblocks-geopose/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="GeoPose" />
+  <meta name="twitter:description" content="[GeoPose](https://www.geopose.org/) Building Blocks" />
+  <script src="https://opengeospatial.github.io/bblocks-geopose/config.js"></script>
+  <script type="module" crossorigin src="https://ogcincubator.github.io/bblocks-viewer/assets/index.js"></script>
+  <link rel="stylesheet" href="https://ogcincubator.github.io/bblocks-viewer/assets/index.css">
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>

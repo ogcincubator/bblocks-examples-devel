@@ -111,6 +111,11 @@ $defs:
           $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 anyOf:
 - $ref: '#/$defs/MyFeature'
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.feature.geojsonFeature
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

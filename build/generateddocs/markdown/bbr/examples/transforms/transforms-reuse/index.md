@@ -26,6 +26,11 @@ Demonstrates calling a component bblock's Python transform from a composite bblo
 $schema: https://json-schema.org/draft/2020-12/schema
 description: A simple JSON object used to demonstrate transform reuse
 type: object
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.transforms.transforms-reuse
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

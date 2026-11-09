@@ -61,7 +61,7 @@ This building block defines the *property set* for an example specialisation of 
 #### ttl
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geopose: <http://example.com/geopose/> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -70,11 +70,11 @@ This building block defines the *property set* for an example specialisation of 
     sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
                             geopose:roll 3.3e-01 ;
                             geopose:yaw 5.553e+00 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat 4.346498e+01 ;
-                            geo1:long -3.803638e+00 ] ] ] ;
+                    geopose:position [ geo1:lat 4.346498e+01 ;
+                            geo1:long -3.803638e+00 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
-    sosa:resultTime "2023-05-22T16:41:00+2" .
+    sosa:resultTime "2023-05-22T16:41:00"^^xsd:dateTime .
 
 
 ```
@@ -91,7 +91,7 @@ allOf:
     hasResult:
       properties:
         pose:
-          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+          $ref: https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/schema.yaml
           x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
         distance:
           type: number
@@ -105,6 +105,11 @@ allOf:
 x-jsonld-prefixes:
   sosa: http://www.w3.org/ns/sosa/
   resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.observation.vectorObservation
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 
@@ -508,10 +513,46 @@ Links to the schema:
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "resultTime": "sosa:resultTime",
+    "resultTime": {
+      "@id": "sosa:resultTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "phenomenonTime": {
+      "@context": {
+        "hasBeginning": "time:hasBeginning",
+        "hasEnd": "time:hasEnd",
+        "inXSDDateTime": {
+          "@id": "time:inXSDDateTime",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "inXSDDateTimeStamp": {
+          "@id": "time:inXSDDateTimeStamp",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+        },
+        "inXSDDate": {
+          "@id": "time:inXSDDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "Instant": "time:Instant",
+        "Interval": "time:Interval",
+        "ProperInterval": "time:ProperInterval",
+        "hasDuration": "time:hasDuration",
+        "hasXSDDuration": {
+          "@id": "time:hasXSDDuration",
+          "@type": "http://www.w3.org/2001/XMLSchema#duration"
+        },
+        "inTimePosition": "time:inTimePosition",
+        "inXSDgYear": {
+          "@id": "time:inXSDgYear",
+          "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+        },
+        "inXSDgYearMonth": {
+          "@id": "time:inXSDgYearMonth",
+          "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth"
+        }
+      },
       "@id": "sosa:phenomenonTime",
-      "@type": "@id"
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "hasFeatureOfInterest": {
       "@id": "sosa:hasFeatureOfInterest",
@@ -525,8 +566,14 @@ Links to the schema:
       "@id": "sosa:usedProcedure",
       "@type": "@id"
     },
-    "startTime": "sosa:startTime",
-    "endTime": "sosa:endTime",
+    "startTime": {
+      "@id": "sosa:startTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endTime": {
+      "@id": "sosa:endTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "hasResult": {
       "@context": {
         "pose": {
@@ -555,19 +602,17 @@ Links to the schema:
       "@id": "sosa:hasResult",
       "@type": "@id"
     },
-    "hasSimpleResult": {
-      "@id": "sosa:hasSimpleResult",
-      "@type": "@id"
-    },
+    "hasSimpleResult": "sosa:hasSimpleResult",
     "hasInputValue": {
       "@id": "sosa:hasInputValue",
       "@type": "@id"
     },
     "sosa": "http://www.w3.org/ns/sosa/",
+    "time": "http://www.w3.org/2006/time#",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
     "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
-    "geopose": "http://example.com/geopose/",
+    "geopose": "https://w3id.org/ogc/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

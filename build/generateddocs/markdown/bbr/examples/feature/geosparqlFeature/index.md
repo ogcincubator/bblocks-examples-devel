@@ -87,6 +87,11 @@ allOf:
       $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.feature.geosparqlFeature
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

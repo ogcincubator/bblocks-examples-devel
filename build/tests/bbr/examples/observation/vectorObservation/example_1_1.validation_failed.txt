@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.observation.vectorObservation - Observation Result (Vector based on GeoPose)
-Generated 2026-10-08T16:40:31.753179+00:00
+Generated 2026-11-09T11:36:51.685268+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -8,7 +8,18 @@ Output Turtle example_1_1.ttl created
 === End Files ===
 
 === JSON Schema ===
-Validation passed
+
+** Validation error **
+ValidationError: '2023-05-22T16:41:00+2' does not match '^-?[0-9]{4,}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})?$'
+
+Failed validating 'pattern' in schema['allOf'][0]['allOf'][0]['allOf'][0]['allOf'][0]['properties']['resultTime']:
+    {'description': 'xsd:dateTime lexical form (time zone optional)',
+     'format': 'date-time',
+     'pattern': '^-?[0-9]{4,}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})?$',
+     'type': 'string'}
+
+On instance['resultTime']:
+    '2023-05-22T16:41:00+2'
 === End JSON Schema ===
 
 === SHACL ===
@@ -19,21 +30,21 @@ Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/prop
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:Naebb0b9f0b984f5aa975448efdf3d2c4
+ - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N08338dbcc0bc4fedb27dc024f5e2ce6a
+ - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*
 
 Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl:
- - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
  - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:N08338dbcc0bc4fedb27dc024f5e2ce6a
  - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*
- - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: _:Naebb0b9f0b984f5aa975448efdf3d2c4
+ - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*
+ - Shape <https://www.ogc.org/rules/sosa/#testResult>: _:N08338dbcc0bc4fedb27dc024f5e2ce6a
+ - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: _:N08338dbcc0bc4fedb27dc024f5e2ce6a
 
 === End SHACL ===
 

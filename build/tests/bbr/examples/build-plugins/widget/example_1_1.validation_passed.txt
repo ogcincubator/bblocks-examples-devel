@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.build-plugins.widget - Build plugins example: Widget
-Generated 2026-10-08T16:40:27.300527+00:00
+Generated 2026-11-09T11:36:46.957632+00:00
 === Files ===
 Using example_1_1.json from examples
 === End Files ===

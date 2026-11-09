@@ -61,6 +61,11 @@ properties:
         const: 1
       schema:
         $ref: https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml#/properties/units
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

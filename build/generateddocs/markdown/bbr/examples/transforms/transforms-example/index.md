@@ -134,6 +134,11 @@ properties:
     x-jsonld-id: http://example.com/hasString
 x-jsonld-prefixes:
   ex: http://example.com/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.transforms.transforms-example
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

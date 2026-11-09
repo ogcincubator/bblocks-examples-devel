@@ -10,3 +10,8 @@ allOf:
   - myProp
 x-jsonld-prefixes:
   myNamespace: http://example.org/myModel/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.feature.propertySet
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'

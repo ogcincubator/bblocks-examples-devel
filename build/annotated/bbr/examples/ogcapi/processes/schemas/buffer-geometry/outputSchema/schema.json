@@ -21,5 +21,11 @@
       "type": "number",
       "minimum": 0
     }
+  },
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
+    "register": "https://ogcincubator.github.io/bblocks-examples-devel/build/register.json",
+    "version": "1.0",
+    "dateOfLastChange": "2026-11-09"
   }
 }

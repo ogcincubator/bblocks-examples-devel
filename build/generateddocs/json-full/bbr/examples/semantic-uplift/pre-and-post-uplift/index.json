@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-09-21",
+  "dateOfLastChange": "2026-11-09",
   "shaclShapes": {
     "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
       "https://ogcincubator.github.io/bblocks-examples-devel/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "annotatedSchema": "type: object\nproperties:\n  one:\n    type: number\n    x-jsonld-id: http://example.com/hasOne\n  two:\n    type: number\n    x-jsonld-id: http://example.com/hasTwo\n  string:\n    type: string\n    x-jsonld-id: http://example.com/hasString\nrequired:\n- one\nx-jsonld-extra-terms:\n  three: http://example.com/exHasGenThree\n  doubleString: http://example.com/hasGenDoubleString\nx-jsonld-prefixes:\n  ex: http://example.com/\n",
+  "annotatedSchema": "type: object\nproperties:\n  one:\n    type: number\n    x-jsonld-id: http://example.com/hasOne\n  two:\n    type: number\n    x-jsonld-id: http://example.com/hasTwo\n  string:\n    type: string\n    x-jsonld-id: http://example.com/hasString\nrequired:\n- one\nx-jsonld-extra-terms:\n  three: http://example.com/exHasGenThree\n  doubleString: http://example.com/hasGenDoubleString\nx-jsonld-prefixes:\n  ex: http://example.com/\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.semantic-uplift.pre-and-post-uplift\n  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-09'\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/semantic-uplift/pre-and-post-uplift"
 }

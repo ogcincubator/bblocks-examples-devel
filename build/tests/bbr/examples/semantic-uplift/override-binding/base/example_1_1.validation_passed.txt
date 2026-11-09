@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.semantic-uplift.override-binding.base - Override Binding - Base
-Generated 2026-10-08T16:40:27.330498+00:00
+Generated 2026-11-09T11:36:46.986413+00:00
 === Files ===
 Using examples/base.json from examples
 JSON-LD context is present - uplifting

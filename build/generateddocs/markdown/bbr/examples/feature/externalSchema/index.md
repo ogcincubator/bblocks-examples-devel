@@ -146,6 +146,11 @@ x-jsonld-extra-terms:
   type: '@type'
 x-jsonld-prefixes:
   ngsi-ld: https://uri.etsi.org/ngsi-ld/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.feature.externalSchema
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

@@ -146,6 +146,11 @@ required:
 - LT
 x-jsonld-prefixes:
   focal-prop: https://w3id.org/ogc/hosted/focal/properties/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.linkeddata.forestStandProperties
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

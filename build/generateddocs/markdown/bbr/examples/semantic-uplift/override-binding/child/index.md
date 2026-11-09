@@ -84,6 +84,11 @@ allOf:
       type: string
       x-jsonld-id: http://www.w3.org/2004/02/skos/core#altLabel
       x-jsonld-type: http://www.w3.org/2001/XMLSchema#language
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.semantic-uplift.override-binding.child
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

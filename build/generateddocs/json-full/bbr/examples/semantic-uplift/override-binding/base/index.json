@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-21",
+  "dateOfLastChange": "2026-11-09",
   "sources": [
     {
       "title": "SKOS Simple Knowledge Organization System Reference",
@@ -64,7 +64,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Base schema binding \"note\" and \"label\" to generic SKOS predicates. See\n  the \"Override Binding - Child\" building block for how a profile can narrow these.\ntype: object\nproperties:\n  note:\n    type: string\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#note\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string\n  label:\n    type: string\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Base schema binding \"note\" and \"label\" to generic SKOS predicates. See\n  the \"Override Binding - Child\" building block for how a profile can narrow these.\ntype: object\nproperties:\n  note:\n    type: string\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#note\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string\n  label:\n    type: string\n    x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.semantic-uplift.override-binding.base\n  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-11-09'\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/semantic-uplift/override-binding/base"
 }

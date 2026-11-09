@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.linkeddata.forestStandFeature - Semantic Feature
-Generated 2026-10-08T16:40:28.665639+00:00
+Generated 2026-11-09T11:36:48.414455+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -51,6 +51,10 @@ Failed validating 'required' in schema[0]['allOf'][1]['properties']['properties'
                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZMENA'}},
      'required': ['LT'],
      'type': 'object',
+     'x-bblocks-metadata': {'dateOfLastChange': '2026-11-09',
+                            'itemIdentifier': 'ogc.bbr.examples.linkeddata.forestStandProperties',
+                            'register': 'https://ogcincubator.github.io/bblocks-examples-devel/build/register.json',
+                            'version': '0.1'},
      'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}
 
 On instance['properties']:
@@ -86,7 +90,7 @@ Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
   	Message: Every geojson:Feature must have at least one focal-prop:lesniTyp whose value is an IRI resource.
   
 Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape <https://example.com/focal/feature-lesniTyp>: _:Nd6cc36cab7a64c468717ab20de024b60
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:Nd3d74e606e594ec18675a3b28f356978
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
@@ -94,9 +98,9 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: _:Nd6cc36cab7a64c468717ab20de024b60
+ - Shape geojson:FeatureShape: _:Nd3d74e606e594ec18675a3b28f356978
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 === End SHACL ===

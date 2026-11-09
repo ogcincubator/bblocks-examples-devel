@@ -216,6 +216,11 @@ properties:
             items:
               $ref: '#/$defs/TopoLine'
 x-jsonld-vocab: https://example.com/edges/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.rules.topo-edges
+  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-09'
 
 ```
 
@@ -328,12 +333,6 @@ Links to the schema:
               "@container": "@list"
             },
             "directed_references": {
-              "@context": {
-                "ref": {
-                  "@type": "@id",
-                  "@id": "topo:ref"
-                }
-              },
               "@id": "topo:directedReferences",
               "@container": "@list"
             },
@@ -425,7 +424,10 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
-    "ref": "topo:ref",
+    "ref": {
+      "@id": "topo:ref",
+      "@type": "@id"
+    },
     "orientation": "topo:orientation",
     "Edge": "topo:Edge",
     "Face": "topo:Face",
@@ -433,6 +435,7 @@ Links to the schema:
     "Shell": "topo:Shell",
     "Solid": "topo:Solid",
     "AggregateSolid": "topo:AggregateSolid",
+    "AggregatePolygon": "topo:AggregatePolygon",
     "rings": {
       "@id": "topo:rings",
       "@container": "@list"

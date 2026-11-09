@@ -8,7 +8,7 @@
   "dateTimeAddition": "2026-05-19T00:00:00+00:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-09-21",
+  "dateOfLastChange": "2026-11-09",
   "shaclShapes": {},
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples-devel/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
@@ -228,7 +228,7 @@
             },
             "reuse-error-propagation": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7xyh8s3g.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp7xyh8s3g.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_5er3o9y.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp_5er3o9y.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             }
           },
           "sizeBytes": 62,
@@ -237,7 +237,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A simple JSON object used to demonstrate transform reuse\ntype: object\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A simple JSON object used to demonstrate transform reuse\ntype: object\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.transforms.transforms-reuse\n  register: https://ogcincubator.github.io/bblocks-examples-devel/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-09'\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples-devel",
   "gitPath": "_sources/transforms/transforms-reuse"
 }
